@@ -9,7 +9,7 @@ function Banner() {
                     <div className={`w-[80%] overflow-hidden flex items-center justify-center bg-[white] rounded-full filter grayscale-[0.75]`}>
                         <img src="/Images/myimage.jpg" alt="no image" width="50%" className=''/>
                     </div>
-                    <div className='w-[90%] h-[50%] flex flex-col p-2 relative'>
+                    <div className='w-[100%] h-[50%] flex flex-col p-2 relative'>
                         <p className='text-xl text-pink-600 font-bold'>Hello,<br />I'm Darshan Dinesh MP</p>
                         <p className="text-3xl font-extrabold">Devoted to the art of programming.</p>
                     </div>
