@@ -108,7 +108,7 @@ function Contents() {
             <div className="p-8 flex flex-col gap-4 text-white">
                 <div onClick={changeEducation} className='p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800'>
                     <p className="text-3xl font-bold">Education and Certifications</p>
-                    <div className={`${education ? 'hidden' : 'block'} flex flex-col gap-4 `}>
+                    <div className={`${education ? 'block' : 'hidden'} flex flex-col gap-4 `}>
                         <p className="text-xl font-bold">
                             Secured first place in National level coding competition (09/2022)
                         </p>
