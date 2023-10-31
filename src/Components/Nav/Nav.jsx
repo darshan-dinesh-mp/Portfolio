@@ -14,11 +14,11 @@ function Nav() {
                     <div className='text-lg'><FontAwesomeIcon className='cursor-pointer' onClick={changeBarsClicked} icon={faBars} /></div>
                 </div>
                 <div className={`bg-black w-full text-white absolute duration-300 ${barsClicked ? 'scale-y-1 top-[0rem]' : 'scale-y-0 -top-[13rem]'}`}>
-                    <ul className='w-full text-lg'>
-                        <li className='py-4 px-8 border-b-[1px] border-t-[1px] border-gray-700 text-right'><FontAwesomeIcon className='cursor-pointer' onClick={changeBarsClicked} icon={faClose} /></li>
-                        <li className='py-4 px-8 border-b-[1px] border-gray-700'><a href="#home">Home</a></li>
-                        <li className='py-4 px-8 border-b-[1px] border-gray-700'><a href="#contact">Contact</a></li>
-                        <li className='py-4 px-8 border-b-[1px] border-gray-700'><a href="www.google.com">Projects</a></li>
+                    <ul className='w-full text-base font-semibold'>
+                        <li className='py-2 px-8 border-b-[1px] border-t-[1px] border-gray-700 text-right'><FontAwesomeIcon className='cursor-pointer' onClick={changeBarsClicked} icon={faClose} /></li>
+                        <li className='py-2 px-8 border-b-[1px] border-gray-700'><a href="#home">Home</a></li>
+                        <li className='py-2 px-8 border-b-[1px] border-gray-700'><a href="#contact">Contact</a></li>
+                        <li className='py-2 px-8 border-b-[1px] border-gray-700'><a href="www.google.com">Projects</a></li>
                     </ul>
                 </div>
             </nav>
