@@ -5,30 +5,32 @@ function Contents() {
         <div>
             {/* Experience */}
             <div className="p-8 bg-gray-200">
-                <p className="text-3xl font-bold text-gray-800">Experience</p>
-                <div className='p-4 flex flex-col gap-4'>
-                    <p className="text-lg font-bold leading-[1.5rem] ">Coordinated Coding Competetion</p>
+                <p className="text-3xl font-bold">Experience</p>
+                <div className='p-4 flex flex-col gap-4 text-gray-800'>
+                    <p className="text-2xl font-bold leading-[1.5rem] ">Coordinated Coding Competetion</p>
                     <div>
-                        <p className="font-bold leading-5">
-                            Organization: St. Aloysius College (Autonomous)
+                        <p className="text-lg">
+                            <span className='font-bold'>Organization:</span> St. Aloysius College (Autonomous)
                         </p>
-                        <p className="font-bold leading-5">
-                            Duration: March 2022 - April 2022
+                        <p className="text-lg">
+                            <span className='font-bold'>Duration:</span> March 2022 - April 2022
                         </p>
-                        <p className="font-bold leading-5">
-                            Location: Mangaluru, Karnataka, India
+                        <p className="text-lg">
+                            <span className='font-bold'>Location:</span> Mangaluru, Karnataka, India
                         </p>
                     </div>
-                    <div>
-                        <p className="font-semibold">
+                    <div className='flex flex-col gap-1'>
+                        <p className="text-xl font-bold">
                             Responsibilities:
                         </p>
-                        Led the planning and execution of a successful coding competition.
-                        Developed competition themes and created challenging coding problems.
-                        Promoted the event and secured sponsorship.
-                        Managed logistics and coordination for a seamless competition.
-                        Collaborated with a judging panel for fair evaluation.
-                        The competition received positive feedback and attracted a significant number of participants.
+                        <p className='text-lg'>
+                            Led the planning and execution of a successful coding competition.
+                            Developed competition themes and created challenging coding problems.
+                            Promoted the event and secured sponsorship.
+                            Managed logistics and coordination for a seamless competition.
+                            Collaborated with a judging panel for fair evaluation.
+                            The competition received positive feedback and attracted a significant number of participants.
+                        </p>
                     </div>
                 </div>
             </div>
