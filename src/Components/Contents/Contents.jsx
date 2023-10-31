@@ -62,7 +62,7 @@ function Contents() {
         <div className="bg-[#1f0812] flex flex-col justify-center items-center">
 
             {/* Experience */}
-            <div className="p-8 w-full flex flex-col gap-4 text-white">
+            <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
                 <p className="text-3xl font-bold">Experience</p>
                 <div className="p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800">
                     <p className="text-2xl font-bold leading-[1.75rem]">Coordinated Coding Competetion</p>
@@ -94,7 +94,7 @@ function Contents() {
             </div>
 
             {/* Projects */}
-            <div className="p-8 w-full flex flex-col gap-4 text-white">
+            <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
                 <p className="text-3xl font-bold">Projects</p>
                 <div className='p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800'>
                     <p className="text-xl font-bold">
@@ -108,7 +108,7 @@ function Contents() {
             </div>
 
             {/* Skills */}
-            <div className="p-8 w-full flex flex-col gap-4 text-white">
+            <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
                 <p className="text-3xl font-bold">Skills</p>
                 <div className='p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800'>
                     <p className="text-xl font-bold">
@@ -122,7 +122,7 @@ function Contents() {
             </div>
 
             {/* Contact  */}
-            <div className="p-8 w-full flex flex-col gap-4 text-white">
+            <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
                 <p className="text-3xl font-bold">Contact</p>
                 <div className='p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800'>
                     <p className="text-xl font-bold">
@@ -136,7 +136,7 @@ function Contents() {
             </div>
 
             {/* About Me */}
-            <div className="p-4 w-full flex flex-col gap-4 text-white">
+            <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
                 <div onClick={changeAbout} className='p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800'>
                     <p className="text-3xl font-bold">About Me</p>
                     <div className={`${about ? 'block' : 'hidden'} flex flex-col gap-4 `}>
@@ -152,7 +152,7 @@ function Contents() {
             </div>
 
             {/* Education */}
-            <div className="p-4 w-full flex flex-col gap-4 text-white">
+            <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
                 <div onClick={changeEducation} className='p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800'>
                     <p className="text-3xl font-bold">Education and Certifications</p>
                     <div className={`${education ? 'block' : 'hidden'} flex flex-col gap-4 `}>
