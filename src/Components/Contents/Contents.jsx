@@ -11,14 +11,14 @@ function Contents() {
 
     function changeExperience(){
         setEducation(false)
-        setExperience(true)
+        setExperience(!experience)
         setSkills(false)
         setProjects(false)
         setContact(false)
         setAbout(false)
     }
     function changeEducation(){
-        setEducation(true)
+        setEducation(!education)
         setExperience(false)
         setSkills(false)
         setProjects(false)
@@ -28,7 +28,7 @@ function Contents() {
     function changeSkills(){
         setEducation(false)
         setExperience(false)
-        setSkills(true)
+        setSkills(!skills)
         setProjects(false)
         setContact(false)
         setAbout(false)
@@ -37,7 +37,7 @@ function Contents() {
         setEducation(false)
         setExperience(false)
         setSkills(false)
-        setProjects(true)
+        setProjects(!projects)
         setContact(false)
         setAbout(false)
     }
@@ -46,7 +46,7 @@ function Contents() {
         setExperience(false)
         setSkills(false)
         setProjects(false)
-        setContact(true)
+        setContact(!contact)
         setAbout(false)
     }
     function changeAbout(){
@@ -55,7 +55,7 @@ function Contents() {
         setSkills(false)
         setProjects(false)
         setContact(false)
-        setAbout(true)
+        setAbout(!about)
     }
 
     return (
