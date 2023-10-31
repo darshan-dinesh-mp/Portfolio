@@ -2,11 +2,11 @@ import React from 'react'
 
 function Contents() {
     return (
-        <div className="bg-[#1f0812] p-4 flex flex-col justify-center items-center gap-4">
+        <div className="bg-[#1f0812] flex flex-col justify-center items-center gap-4">
             {/* Experience */}
-            <div className="p-8 bg-gray-200 border-2 rounded-xl">
+            <div className="p-8 flex flex-col gap-4 text-white">
                 <p className="text-3xl font-bold">Experience</p>
-                <div className='p-4 flex flex-col gap-4 text-gray-800'>
+                <div className='p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800'>
                     <p className="text-2xl font-bold leading-[1.75rem]">Coordinated Coding Competetion</p>
                     <div>
                         <p className="text-lg">
