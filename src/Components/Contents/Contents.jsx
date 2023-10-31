@@ -9,7 +9,7 @@ function Contents() {
     const [about, setAbout] = useState(false);
     const [education, setEducation] = useState(false);
 
-    function changeExperience(){
+    function changeExperience() {
         setEducation(false)
         setExperience(!experience)
         setSkills(false)
@@ -17,7 +17,7 @@ function Contents() {
         setContact(false)
         setAbout(false)
     }
-    function changeEducation(){
+    function changeEducation() {
         setEducation(!education)
         setExperience(false)
         setSkills(false)
@@ -25,7 +25,7 @@ function Contents() {
         setContact(false)
         setAbout(false)
     }
-    function changeSkills(){
+    function changeSkills() {
         setEducation(false)
         setExperience(false)
         setSkills(!skills)
@@ -33,7 +33,7 @@ function Contents() {
         setContact(false)
         setAbout(false)
     }
-    function changeProject(){
+    function changeProject() {
         setEducation(false)
         setExperience(false)
         setSkills(false)
@@ -41,7 +41,7 @@ function Contents() {
         setContact(false)
         setAbout(false)
     }
-    function changeContact(){
+    function changeContact() {
         setEducation(false)
         setExperience(false)
         setSkills(false)
@@ -49,7 +49,7 @@ function Contents() {
         setContact(!contact)
         setAbout(false)
     }
-    function changeAbout(){
+    function changeAbout() {
         setEducation(false)
         setExperience(false)
         setSkills(false)
@@ -63,32 +63,34 @@ function Contents() {
 
             {/* Experience */}
             <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
-                <p className="text-3xl font-bold">Experience</p>
-                <div className="p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800">
-                    <p className="text-2xl font-bold leading-[1.75rem]">Coordinated Coding Competetion</p>
-                    <div>
-                        <p className="text-lg">
-                            <span className='font-bold'>Organization:</span><br />St. Aloysius College (Autonomous)
-                        </p>
-                        <p className="text-lg">
-                            <span className='font-bold'>Duration:</span><br />March 2022 - April 2022
-                        </p>
-                        <p className="text-lg">
-                            <span className='font-bold'>Location:</span><br />Mangaluru, Karnataka, India
-                        </p>
-                    </div>
-                    <div className='flex flex-col gap-1'>
-                        <p className="text-xl font-bold">
-                            Responsibilities:
-                        </p>
-                        <p className='text-lg'>
-                            Led the planning and execution of a successful coding competition.
-                            Developed competition themes and created challenging coding problems.
-                            Promoted the event and secured sponsorship.
-                            Managed logistics and coordination for a seamless competition.
-                            Collaborated with a judging panel for fair evaluation.
-                            The competition received positive feedback and attracted a significant number of participants.
-                        </p>
+                <div className='flex flex-col bg-gray-300 rounded-xl text-gray-800'>
+                    <p onClick={changeExperience} className="text-3xl font-bold p-4">Experience</p>
+                    <div className={`${experience ? 'block' : 'hidden'} p-4 w-full h-full bg-gray-200 flex flex-col gap-4 rounded-b-xl duration-300`}>
+                        <p className="text-2xl font-bold leading-[1.75rem]">Coordinated Coding Competetion</p>
+                        <div>
+                            <p className="text-lg">
+                                <span className='font-bold'>Organization:</span><br />St. Aloysius College (Autonomous)
+                            </p>
+                            <p className="text-lg">
+                                <span className='font-bold'>Duration:</span><br />March 2022 - April 2022
+                            </p>
+                            <p className="text-lg">
+                                <span className='font-bold'>Location:</span><br />Mangaluru, Karnataka, India
+                            </p>
+                        </div>
+                        <div className='flex flex-col gap-1'>
+                            <p className="text-xl font-bold">
+                                Responsibilities:
+                            </p>
+                            <p className='text-lg'>
+                                Led the planning and execution of a successful coding competition.
+                                Developed competition themes and created challenging coding problems.
+                                Promoted the event and secured sponsorship.
+                                Managed logistics and coordination for a seamless competition.
+                                Collaborated with a judging panel for fair evaluation.
+                                The competition received positive feedback and attracted a significant number of participants.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
