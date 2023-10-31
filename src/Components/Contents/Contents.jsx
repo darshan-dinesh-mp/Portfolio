@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contents() {
     return (
-        <div className="bg-[#1f0812] flex flex-col justify-center items-center gap-4">
+        <div className="bg-[#1f0812] flex flex-col justify-center items-center">
             {/* Experience */}
             <div className="p-8 flex flex-col gap-4 text-white">
                 <p className="text-3xl font-bold">Experience</p>
@@ -36,35 +36,73 @@ function Contents() {
             </div>
 
             {/* Projects and Work Samples Section */}
-            <div className="p-8 bg-gray-200 border-2 rounded-xl">
-                <h2 className="text-3xl font-semibold text-gray-800 mb-4">Projects and Work Samples</h2>
-                {/* Include your project samples and descriptions here */}
+            <div className="p-8 flex flex-col gap-4 text-white">
+                <p className="text-3xl font-bold">Projects and Work Samples Section</p>
+                <div className='p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800'>
+                    <p className="text-xl font-bold">
+                        Secured first place in National level coding competition (09/2022)
+                    </p>
+                    <p className='text-lg'>
+                        Secured first place in Coding Event in the National level IT Fest "Joshiana 11.0" organized by St Joseph
+                        Engineering College, Mangalore, Karnataka, India.
+                    </p>
+                </div>
             </div>
 
             {/* Skills and Expertise Section */}
-            <div className="p-8 bg-gray-200 border-2 rounded-xl">
-                <h2 className="text-3xl font-semibold text-gray-800 mb-4">Skills and Expertise</h2>
-                {/* List your skills and expertise here */}
+            <div className="p-8 flex flex-col gap-4 text-white">
+                <p className="text-3xl font-bold">Skills and Expertise Section</p>
+                <div className='p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800'>
+                    <p className="text-xl font-bold">
+                        Secured first place in National level coding competition (09/2022)
+                    </p>
+                    <p className='text-lg'>
+                        Secured first place in Coding Event in the National level IT Fest "Joshiana 11.0" organized by St Joseph
+                        Engineering College, Mangalore, Karnataka, India.
+                    </p>
+                </div>
             </div>
 
             {/* Contact Information Section */}
-            <div className="p-8 bg-gray-200 border-2 rounded-xl">
-                <h2 className="text-3xl font-semibold text-gray-800 mb-4">Contact Information</h2>
-                {/* Include your contact information here */}
+            <div className="p-8 flex flex-col gap-4 text-white">
+                <p className="text-3xl font-bold">Contact Information Section</p>
+                <div className='p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800'>
+                    <p className="text-xl font-bold">
+                        Secured first place in National level coding competition (09/2022)
+                    </p>
+                    <p className='text-lg'>
+                        Secured first place in Coding Event in the National level IT Fest "Joshiana 11.0" organized by St Joseph
+                        Engineering College, Mangalore, Karnataka, India.
+                    </p>
+                </div>
             </div>
 
             {/* About Me/Personal Statement Section */}
-            <div className="p-8 bg-gray-200 border-2 rounded-xl">
-                <h2 className="text-3xl font-semibold text-gray-800 mb-4">About Me/Personal Statement</h2>
-                {/* Write your personal statement here */}
+            <div className="p-8 flex flex-col gap-4 text-white">
+                <p className="text-3xl font-bold">About Me/Personal Statement Section</p>
+                <div className='p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800'>
+                    <p className="text-xl font-bold">
+                        Secured first place in National level coding competition (09/2022)
+                    </p>
+                    <p className='text-lg'>
+                        Secured first place in Coding Event in the National level IT Fest "Joshiana 11.0" organized by St Joseph
+                        Engineering College, Mangalore, Karnataka, India.
+                    </p>
+                </div>
             </div>
 
             {/* Education and Certifications Section */}
-            <div className="p-8 bg-gray-200 border-2 rounded-xl">
-                <h2 className="text-3xl font-semibold text-gray-800">Education and Certifications</h2>
-                Secured first place in National level coding competition (09/2022)
-                Secured first place in Coding Event in the National level IT Fest "Joshiana 11.0" organized by St Joseph
-                Engineering College, Mangalore, Karnataka, India.
+            <div className="p-8 flex flex-col gap-4 text-white">
+                <p className="text-3xl font-bold">Education and Certifications</p>
+                <div className='p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800'>
+                    <p className="text-xl font-bold">
+                        Secured first place in National level coding competition (09/2022)
+                    </p>
+                    <p className='text-lg'>
+                        Secured first place in Coding Event in the National level IT Fest "Joshiana 11.0" organized by St Joseph
+                        Engineering College, Mangalore, Karnataka, India.
+                    </p>
+                </div>
             </div>
         </div>
     )
