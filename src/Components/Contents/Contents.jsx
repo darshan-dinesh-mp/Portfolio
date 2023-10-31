@@ -18,11 +18,11 @@ function Contents() {
                         <p className="font-semibold leading-5">
                             Location: Mangaluru, Karnataka, India
                         </p>
+                    </div>
+                    <div>
                         <p className="font-semibold leading-5">
                             Responsibilities:
                         </p>
-                    </div>
-                    <div>
                         Led the planning and execution of a successful coding competition.
                         Developed competition themes and created challenging coding problems.
                         Promoted the event and secured sponsorship.
