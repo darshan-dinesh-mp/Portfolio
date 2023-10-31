@@ -136,7 +136,7 @@ function Contents() {
             </div>
 
             {/* About Me */}
-            <div className="p-8 w-full flex flex-col gap-4 text-white">
+            <div className="p-4 w-full flex flex-col gap-4 text-white">
                 <div onClick={changeAbout} className='p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800'>
                     <p className="text-3xl font-bold">About Me</p>
                     <div className={`${about ? 'block' : 'hidden'} flex flex-col gap-4 `}>
@@ -152,7 +152,7 @@ function Contents() {
             </div>
 
             {/* Education */}
-            <div className="p-8 w-full flex flex-col gap-4 text-white">
+            <div className="p-4 w-full flex flex-col gap-4 text-white">
                 <div onClick={changeEducation} className='p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800'>
                     <p className="text-3xl font-bold">Education and Certifications</p>
                     <div className={`${education ? 'block' : 'hidden'} flex flex-col gap-4 `}>
