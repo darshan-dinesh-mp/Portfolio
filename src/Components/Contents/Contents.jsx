@@ -7,7 +7,7 @@ function Contents() {
             <div className="p-8">
                 <p className="text-3xl font-bold text-gray-800">Experience</p>
                 <div className='p-4 flex flex-col gap-4'>
-                    <p className="text-lg font-semibold leading-[1.5rem] ">Coordinated Coding Competetion</p>
+                    <p className="text-lg font-bold leading-[1.5rem] ">Coordinated Coding Competetion</p>
                     <div>
                         <p className="font-semibold leading-5">
                             Organization: St. Aloysius College (Autonomous)
@@ -65,21 +65,13 @@ function Contents() {
                 </div>
             </section>
 
-            {/* Blog or Writing Samples Section */}
-            <section id="blog" className="py-12 bg-gray-100">
-                <div className="container mx-auto">
-                    <h2 className="text-3xl font-semibold text-gray-800 mb-4">Blog or Writing Samples</h2>
-                    {/* Include your blog posts or writing samples here */}
-                </div>
-            </section>
-
             {/* Education and Certifications Section */}
-            <section id="education" className="py-12 bg-white">
-                <div className="container mx-auto">
-                    <h2 className="text-3xl font-semibold text-gray-800 mb-4">Education and Certifications</h2>
-                    {/* List your educational background and certifications here */}
-                </div>
-            </section>
+            <div className="container mx-auto">
+                <h2 className="text-3xl font-semibold text-gray-800">Education and Certifications</h2>
+                Secured first place in National level coding competition (09/2022)
+                Secured first place in Coding Event in the National level IT Fest "Joshiana 11.0" organized by St Joseph
+                Engineering College, Mangalore, Karnataka, India.
+            </div>
         </div>
     )
 }
