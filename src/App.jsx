@@ -8,10 +8,8 @@ function App() {
   return (
     <>
       <Nav />
-      <div>
-        <Banner />
-        <Contents />
-      </div>
+      <Banner />
+      <Contents />
     </>
   )
 }
