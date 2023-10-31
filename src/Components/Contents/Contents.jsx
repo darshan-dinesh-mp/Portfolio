@@ -9,15 +9,60 @@ function Contents() {
     const [about, setAbout] = useState(false);
     const [education, setEducation] = useState(false);
 
+    function changeExperience(){
+        setEducation(false)
+        setExperience(true)
+        setSkills(false)
+        setProjects(false)
+        setContact(false)
+        setAbout(false)
+    }
     function changeEducation(){
-        setEducation(!education)
+        setEducation(true)
+        setExperience(false)
+        setSkills(false)
+        setProjects(false)
+        setContact(false)
+        setAbout(false)
+    }
+    function changeSkills(){
+        setEducation(false)
+        setExperience(false)
+        setSkills(true)
+        setProjects(false)
+        setContact(false)
+        setAbout(false)
+    }
+    function changeProject(){
+        setEducation(false)
+        setExperience(false)
+        setSkills(false)
+        setProjects(true)
+        setContact(false)
+        setAbout(false)
+    }
+    function changeContact(){
+        setEducation(false)
+        setExperience(false)
+        setSkills(false)
+        setProjects(false)
+        setContact(true)
+        setAbout(false)
+    }
+    function changeAbout(){
+        setEducation(false)
+        setExperience(false)
+        setSkills(false)
+        setProjects(false)
+        setContact(false)
+        setAbout(true)
     }
 
     return (
         <div className="bg-[#1f0812] flex flex-col justify-center items-center">
 
             {/* Experience */}
-            <div className="p-8 flex flex-col gap-4 text-white">
+            <div className="p-8 w-full flex flex-col gap-4 text-white">
                 <p className="text-3xl font-bold">Experience</p>
                 <div className="p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800">
                     <p className="text-2xl font-bold leading-[1.75rem]">Coordinated Coding Competetion</p>
@@ -49,7 +94,7 @@ function Contents() {
             </div>
 
             {/* Projects */}
-            <div className="p-8 flex flex-col gap-4 text-white">
+            <div className="p-8 w-full flex flex-col gap-4 text-white">
                 <p className="text-3xl font-bold">Projects</p>
                 <div className='p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800'>
                     <p className="text-xl font-bold">
@@ -63,7 +108,7 @@ function Contents() {
             </div>
 
             {/* Skills */}
-            <div className="p-8 flex flex-col gap-4 text-white">
+            <div className="p-8 w-full flex flex-col gap-4 text-white">
                 <p className="text-3xl font-bold">Skills</p>
                 <div className='p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800'>
                     <p className="text-xl font-bold">
@@ -77,7 +122,7 @@ function Contents() {
             </div>
 
             {/* Contact  */}
-            <div className="p-8 flex flex-col gap-4 text-white">
+            <div className="p-8 w-full flex flex-col gap-4 text-white">
                 <p className="text-3xl font-bold">Contact</p>
                 <div className='p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800'>
                     <p className="text-xl font-bold">
@@ -91,21 +136,23 @@ function Contents() {
             </div>
 
             {/* About Me */}
-            <div className="p-8 flex flex-col gap-4 text-white">
-                <p className="text-3xl font-bold">About Me</p>
-                <div className='p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800'>
-                    <p className="text-xl font-bold">
-                        Secured first place in National level coding competition (09/2022)
-                    </p>
-                    <p className='text-lg'>
-                        Secured first place in Coding Event in the National level IT Fest "Joshiana 11.0" organized by St Joseph
-                        Engineering College, Mangalore, Karnataka, India.
-                    </p>
+            <div className="p-8 w-full flex flex-col gap-4 text-white">
+                <div onClick={changeAbout} className='p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800'>
+                    <p className="text-3xl font-bold">About Me</p>
+                    <div className={`${about ? 'block' : 'hidden'} flex flex-col gap-4 `}>
+                        <p className="text-xl font-bold">
+                            Secured first place in National level coding competition (09/2022)
+                        </p>
+                        <p className='text-lg'>
+                            Secured first place in Coding Event in the National level IT Fest "Joshiana 11.0" organized by St Joseph
+                            Engineering College, Mangalore, Karnataka, India.
+                        </p>
+                    </div>
                 </div>
             </div>
 
             {/* Education */}
-            <div className="p-8 flex flex-col gap-4 text-white">
+            <div className="p-8 w-full flex flex-col gap-4 text-white">
                 <div onClick={changeEducation} className='p-4 flex flex-col gap-4 bg-gray-200 rounded-xl text-gray-800'>
                     <p className="text-3xl font-bold">Education and Certifications</p>
                     <div className={`${education ? 'block' : 'hidden'} flex flex-col gap-4 `}>
