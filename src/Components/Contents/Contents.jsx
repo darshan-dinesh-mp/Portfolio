@@ -4,23 +4,23 @@ function Contents() {
     return (
         <div>
             {/* Experience */}
-            <div className="p-8">
+            <div className="p-8 bg-gray-200">
                 <p className="text-3xl font-bold text-gray-800">Experience</p>
                 <div className='p-4 flex flex-col gap-4'>
                     <p className="text-lg font-bold leading-[1.5rem] ">Coordinated Coding Competetion</p>
                     <div>
-                        <p className="font-semibold leading-5">
+                        <p className="font-bold leading-5">
                             Organization: St. Aloysius College (Autonomous)
                         </p>
-                        <p className="font-semibold leading-5">
+                        <p className="font-bold leading-5">
                             Duration: March 2022 - April 2022
                         </p>
-                        <p className="font-semibold leading-5">
+                        <p className="font-bold leading-5">
                             Location: Mangaluru, Karnataka, India
                         </p>
                     </div>
                     <div>
-                        <p className="font-semibold leading-5">
+                        <p className="font-semibold">
                             Responsibilities:
                         </p>
                         Led the planning and execution of a successful coding competition.
