@@ -10,13 +10,13 @@ function Contents() {
                     <p className="text-2xl font-bold leading-[1.5rem] ">Coordinated Coding Competetion</p>
                     <div>
                         <p className="text-lg">
-                            <span className='font-bold'>Organization:</span> St. Aloysius College (Autonomous)
+                            <span className='font-bold'>Organization:</span><br />St. Aloysius College (Autonomous)
                         </p>
                         <p className="text-lg">
-                            <span className='font-bold'>Duration:</span> March 2022 - April 2022
+                            <span className='font-bold'>Duration:</span><br />March 2022 - April 2022
                         </p>
                         <p className="text-lg">
-                            <span className='font-bold'>Location:</span> Mangaluru, Karnataka, India
+                            <span className='font-bold'>Location:</span><br />Mangaluru, Karnataka, India
                         </p>
                     </div>
                     <div className='flex flex-col gap-1'>
