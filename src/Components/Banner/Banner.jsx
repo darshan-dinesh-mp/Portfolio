@@ -10,7 +10,7 @@ function Banner() {
                         <img src="/Images/myimage.jpg" alt="no image" width="50%" className=''/>
                     </div>
                     <div className='flex flex-col gap-4 relative'>
-                        <p className='text-xl text-pink-600 font-bold'>Hello,<br />I'm Darshan</p>
+                        <p className='text-xl text-pink-600 font-bold first-line:text-left'>Hello,<br />I'm Darshan</p>
                         <p className="text-3xl font-extrabold">Devoted to the art of programming.</p>
                     </div>
                 </div>
