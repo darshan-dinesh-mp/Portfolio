@@ -35,7 +35,7 @@ function Contents() {
     }
 
     return (
-        <div className="bg-[#1f0812] bg-coverd min-h-screen flex flex-col justify-center items-center">
+        <div id='about' className="bg-[#1f0812] bg-coverd min-h-screen flex flex-col justify-center items-center">
 
             {/* Experience */}
             <div className="px-8 py-4 w-full  flex flex-col gap-4 text-white">
