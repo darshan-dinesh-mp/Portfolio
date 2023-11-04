@@ -73,7 +73,7 @@ function Contents() {
             <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
                 <div className='flex flex-col bg-gray-300 rounded-xl text-gray-800'>
                     <p onClick={changeExperience} className="text-3xl font-bold p-4">Experience</p>
-                    <div className={`${experience ? 'block' : 'hidden'} p-4 w-full h-full bg-gray-200 flex flex-col gap-4 rounded-b-xl duration-300`}>
+                    <div className={`${experience ? 'p-4 w-full h-[20rem] rounded-b-xl overflow-y-auto' : 'w-full h-[0rem] px-4 text-transparent'} bg-gray-200 flex flex-col gap-4 duration-300`}>
                         <p className="text-2xl font-bold leading-[1.75rem]">Coordinated Coding Competetion</p>
                         <div>
                             <p className="text-lg">
@@ -107,7 +107,7 @@ function Contents() {
             <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
                 <div className='flex flex-col bg-gray-300 rounded-xl text-gray-800'>
                     <p onClick={changeProject} className="text-3xl font-bold p-4">Projects</p>
-                    <div className={`${projects ? 'block' : 'hidden'} p-4 w-full h-full bg-gray-200 flex flex-col gap-4 rounded-b-xl duration-300`}>
+                    <div className={`${projects ? 'p-4 w-full h-[20rem] rounded-b-xl overflow-y-auto' : 'w-full h-[0rem] px-4 text-transparent'} bg-gray-200 flex flex-col gap-4 duration-300`}>
                         <p className="text-xl font-bold">
                             Secured first place in National level coding competition (09/2022)
                         </p>
@@ -123,7 +123,7 @@ function Contents() {
             <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
                 <div className='flex flex-col bg-gray-300 rounded-xl text-gray-800'>
                     <p onClick={changeSkills} className="text-3xl font-bold p-4">Skills</p>
-                    <div className={`${skills ? 'block' : 'hidden'} p-4 w-full h-full bg-gray-200 flex flex-col gap-4 rounded-b-xl duration-300`}>
+                    <div className={`${skills ? 'p-4 w-full h-[20rem] rounded-b-xl overflow-y-auto' : 'w-full h-[0rem] px-4 text-transparent'} bg-gray-200 flex flex-col gap-4 duration-300`}>
                         <p className="text-xl font-bold">
                             Secured first place in National level coding competition (09/2022)
                         </p>
@@ -139,7 +139,7 @@ function Contents() {
             <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
                 <div className='flex flex-col bg-gray-300 rounded-xl text-gray-800'>
                     <p onClick={changeEducation} className="text-3xl font-bold p-4">Education and Certifications</p>
-                    <div className={`${education ? 'block' : 'hidden'} p-4 w-full h-full bg-gray-200 flex flex-col gap-4 rounded-b-xl duration-300`}>
+                    <div className={`${education ? 'p-4 w-full h-[20rem] rounded-b-xl overflow-y-auto' : 'w-full h-[0rem] px-4 text-transparent'} bg-gray-200 flex flex-col gap-4 duration-300`}>
                         <p className="text-xl font-bold">
                             Secured first place in National level coding competition (09/2022)
                         </p>
