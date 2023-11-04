@@ -5,7 +5,6 @@ function Contents() {
     const [experience, setExperience] = useState(false);
     const [skills, setSkills] = useState(false);
     const [projects, setProjects] = useState(false);
-    const [contact, setContact] = useState(false);
     const [about, setAbout] = useState(false);
     const [education, setEducation] = useState(false);
 
@@ -14,7 +13,6 @@ function Contents() {
         setExperience(!experience)
         setSkills(false)
         setProjects(false)
-        setContact(false)
         setAbout(false)
     }
     function changeEducation() {
@@ -22,7 +20,6 @@ function Contents() {
         setExperience(false)
         setSkills(false)
         setProjects(false)
-        setContact(false)
         setAbout(false)
     }
     function changeSkills() {
@@ -30,7 +27,6 @@ function Contents() {
         setExperience(false)
         setSkills(!skills)
         setProjects(false)
-        setContact(false)
         setAbout(false)
     }
     function changeProject() {
@@ -38,7 +34,6 @@ function Contents() {
         setExperience(false)
         setSkills(false)
         setProjects(!projects)
-        setContact(false)
         setAbout(false)
     }
     function changeContact() {
@@ -46,7 +41,6 @@ function Contents() {
         setExperience(false)
         setSkills(false)
         setProjects(false)
-        setContact(!contact)
         setAbout(false)
     }
     function changeAbout() {
@@ -54,7 +48,6 @@ function Contents() {
         setExperience(false)
         setSkills(false)
         setProjects(false)
-        setContact(false)
         setAbout(!about)
     }
 
@@ -116,22 +109,6 @@ function Contents() {
                 <div className='flex flex-col bg-gray-300 rounded-xl text-gray-800'>
                     <p onClick={changeSkills} className="text-3xl font-bold p-4">Skills</p>
                     <div className={`${skills ? 'block' : 'hidden'} p-4 w-full h-full bg-gray-200 flex flex-col gap-4 rounded-b-xl duration-300`}>
-                        <p className="text-xl font-bold">
-                            Secured first place in National level coding competition (09/2022)
-                        </p>
-                        <p className='text-lg'>
-                            Secured first place in Coding Event in the National level IT Fest "Joshiana 11.0" organized by St Joseph
-                            Engineering College, Mangalore, Karnataka, India.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            {/* Contact  */}
-            <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
-                <div className='flex flex-col bg-gray-300 rounded-xl text-gray-800'>
-                    <p onClick={changeContact} className="text-3xl font-bold p-4">Contact</p>
-                    <div className={`${contact ? 'block' : 'hidden'} p-4 w-full h-full bg-gray-200 flex flex-col gap-4 rounded-b-xl duration-300`}>
                         <p className="text-xl font-bold">
                             Secured first place in National level coding competition (09/2022)
                         </p>
