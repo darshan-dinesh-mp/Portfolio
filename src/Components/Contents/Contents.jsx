@@ -107,14 +107,15 @@ function Contents() {
             <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
                 <div className='flex flex-col bg-gray-300 rounded-xl text-gray-800'>
                     <p onClick={changeProject} className="text-3xl font-bold p-4">Projects</p>
-                    <div className={`${projects ? 'p-4 w-full h-[20rem] rounded-b-xl overflow-y-auto' : 'px-4 w-full h-[0rem] text-transparent overflow-hidden'} bg-gray-200 flex flex-col gap-4 duration-300`}>
-                        <p className="text-xl font-bold">
-                            Secured first place in National level coding competition (09/2022)
-                        </p>
-                        <p className='text-lg'>
-                            Secured first place in Coding Event in the National level IT Fest "Joshiana 11.0" organized by St Joseph
-                            Engineering College, Mangalore, Karnataka, India.
-                        </p>
+                    <div className={`${projects ? 'p-2 w-full h-[20rem] rounded-b-xl overflow-y-auto' : 'px-4 w-full h-[0rem] text-transparent overflow-hidden'} bg-gray-200 flex flex-col gap-4 duration-300`}>
+                        <div className='border-[1px] border-black rounded-lg p-4'>
+                            <p className="text-2xl font-bold leading-[1.75rem]">EATABLES - Location-Based Food Discovery Platform</p>
+                            <div className='flex flex-col gap-1'>
+                                <p className="text-xl font-bold">
+                                    <a href="www.google.com">Know more</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
