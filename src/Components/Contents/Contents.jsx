@@ -112,7 +112,7 @@ function Contents() {
                             <p className="text-2xl font-bold leading-[1.75rem]">EATABLES - Location-Based Food Discovery Platform</p>
                             <div className='flex flex-col gap-1'>
                                 <p className="text-xl font-bold">
-                                    <a href="www.google.com">Know more</a>
+                                    <a href="https://www.google.com">Know more</a>
                                 </p>
                             </div>
                         </div>
