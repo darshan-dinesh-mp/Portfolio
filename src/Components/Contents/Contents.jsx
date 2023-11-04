@@ -108,13 +108,11 @@ function Contents() {
                 <div className='flex flex-col bg-gray-300 rounded-xl text-gray-800'>
                     <p onClick={changeProject} className="text-3xl font-bold p-4">Projects</p>
                     <div className={`${projects ? 'p-2 w-full h-[20rem] rounded-b-xl overflow-y-auto' : 'px-4 w-full h-[0rem] text-transparent overflow-hidden'} bg-gray-200 flex flex-col gap-4 duration-300`}>
-                        <div className='border-[1px] border-black rounded-lg p-4'>
-                            <p className="text-2xl font-bold leading-[1.75rem]">EATABLES - Location-Based Food Discovery Platform</p>
-                            <div className='flex flex-col gap-1'>
-                                <p className="text-xl font-bold">
-                                    <a href="https://www.google.com">Know more</a>
-                                </p>
-                            </div>
+                        <div className='border-[1px] border-black rounded-lg p-4 flex flex-col gap-3'>
+                            <p className="text-2xl font-bold leading-[1.75rem]">EATABLES<br/>Location-Based Food Discovery Platform</p>
+                            <p className="text-xl font-bold">
+                                <a href="https://www.google.com">Know more -</a>
+                            </p>
                         </div>
                     </div>
                 </div>
