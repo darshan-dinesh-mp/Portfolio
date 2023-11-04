@@ -58,7 +58,7 @@ function Contents() {
             <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
                 <div className='flex flex-col bg-gray-300 rounded-xl text-gray-800'>
                     <p onClick={changeAbout} className="text-3xl font-bold p-4">About Me</p>
-                    <div className={`${about ? 'p-4 w-full h-[20rem] rounded-b-xl' : 'w-full h-[0rem] px-4 text-transparent'} bg-gray-200 flex flex-col gap-4 duration-1000`}>
+                    <div className={`${about ? 'p-4 w-full h-[20rem] rounded-b-xl overflow-y-auto' : 'w-full h-[0rem] px-4 text-transparent'} bg-gray-200 flex flex-col gap-4 duration-1000`}>
                         <p className="text-xl font-bold">
                             Secured first place in National level coding competition (09/2022)
                         </p>
