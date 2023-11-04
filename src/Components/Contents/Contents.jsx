@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSketch } from '@fortawesome/free-brands-svg-icons';
 
 function Contents() {
 
     const [experience, setExperience] = useState(false);
     const [skills, setSkills] = useState(false);
     const [projects, setProjects] = useState(false);
-    const [about, setAbout] = useState(false);
     const [education, setEducation] = useState(false);
 
     function changeExperience() {
@@ -16,67 +14,31 @@ function Contents() {
         setExperience(!experience)
         setSkills(false)
         setProjects(false)
-        setAbout(false)
     }
     function changeEducation() {
         setEducation(!education)
         setExperience(false)
         setSkills(false)
         setProjects(false)
-        setAbout(false)
     }
     function changeSkills() {
         setEducation(false)
         setExperience(false)
         setSkills(!skills)
         setProjects(false)
-        setAbout(false)
     }
     function changeProject() {
         setEducation(false)
         setExperience(false)
         setSkills(false)
         setProjects(!projects)
-        setAbout(false)
-    }
-    function changeContact() {
-        setEducation(false)
-        setExperience(false)
-        setSkills(false)
-        setProjects(false)
-        setAbout(false)
-    }
-    function changeAbout() {
-        setEducation(false)
-        setExperience(false)
-        setSkills(false)
-        setProjects(false)
-        setAbout(!about)
     }
 
     return (
         <div className="bg-[#1f0812] bg-coverd h-full flex flex-col justify-center items-center">
 
-            {/* About Me */}
-            <div className="relative px-8 py-4 w-full flex flex-col gap-4 text-white">
-                <div className='flex flex-col bg-gray-300 rounded-xl text-gray-800'>
-                    <div onClick={changeAbout} className="flex items-center justify-between text-2xl font-bold p-4">
-                        <p>About Me</p>
-                        <FontAwesomeIcon icon={faChevronRight} className={`${about ? 'rotate-90' : 'rotate-0'} duration-500`} />
-                    </div>
-                    <div className={`${about ? 'p-4 w-full h-[20rem] rounded-b-xl overflow-y-auto' : 'px-4 w-full h-[0rem] text-transparent overflow-hidden'} bg-gray-200 flex flex-col gap-4 duration-500`}>
-                        <p className="text-xl font-bold">
-                            Secured first place in National level coding competition (09/2022)
-                        </p>
-                        <p className='text-lg'>
-                            Secured first place in Coding Event in the National level IT Fest "Joshiana 11.0" organized by St Joseph
-                            Engineering College, Mangalore, Karnataka, India.
-                        </p>
-                    </div>
-                </div>
-            </div>
             {/* Experience */}
-            <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
+            <div className="px-8 py-4 w-full  flex flex-col gap-4 text-white">
                 <div className='flex flex-col bg-gray-300 rounded-xl text-gray-800'>
                     <div onClick={changeExperience} className="flex items-center justify-between text-2xl font-bold p-4">
                         <p>Experience</p>
