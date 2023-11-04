@@ -10,7 +10,7 @@ function Nav() {
     return (
         <>
             <nav className='fixed w-full top-0'>
-                <div className={`${barsClicked ? 'h-screen' : ''} bg-transparent`} onClick={changeBarsClicked}>
+                <div className={`${barsClicked ? 'h-screen backdrop-blur-sm bg-black/50' : ''} duration-500`} onClick={changeBarsClicked}>
                     <div className='bg-[black] text-white flex items-center justify-end py-4 px-8'>
                         <div className='text-lg'><FontAwesomeIcon className='cursor-pointer' onClick={changeBarsClicked} icon={faBars} /></div>
                     </div>
