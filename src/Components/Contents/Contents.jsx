@@ -52,7 +52,7 @@ function Contents() {
     }
 
     return (
-        <div className="bg-[#1f0812] bg-coverd flex flex-col justify-center items-center">
+        <div className="bg-[#1f0812] bg-coverd h-screen flex flex-col justify-center items-center">
 
             {/* About Me */}
             <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
