@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSketch } from '@fortawesome/free-brands-svg-icons';
 
 function Contents() {
 
@@ -55,10 +58,13 @@ function Contents() {
         <div className="bg-[#1f0812] bg-coverd h-screen flex flex-col justify-center items-center">
 
             {/* About Me */}
-            <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
+            <div className="relative px-8 py-4 w-full flex flex-col gap-4 text-white">
                 <div className='flex flex-col bg-gray-300 rounded-xl text-gray-800'>
-                    <p onClick={changeAbout} className="text-2xl font-bold p-4">About Me</p>
-                    <div className={`${about ? 'p-4 w-full h-[20rem] rounded-b-xl overflow-y-auto' : 'px-4 w-full h-[0rem] text-transparent overflow-hidden'} bg-gray-200 flex flex-col gap-4 duration-300`}>
+                    <div onClick={changeAbout} className="flex items-center justify-between text-2xl font-bold p-4">
+                        <p>About Me</p>
+                        <FontAwesomeIcon icon={faChevronRight} className={`${about ? 'rotate-90' : 'rotate-0'} duration-500`} />
+                    </div>
+                    <div className={`${about ? 'p-4 w-full h-[20rem] rounded-b-xl overflow-y-auto' : 'px-4 w-full h-[0rem] text-transparent overflow-hidden'} bg-gray-200 flex flex-col gap-4 duration-500`}>
                         <p className="text-xl font-bold">
                             Secured first place in National level coding competition (09/2022)
                         </p>
@@ -72,8 +78,11 @@ function Contents() {
             {/* Experience */}
             <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
                 <div className='flex flex-col bg-gray-300 rounded-xl text-gray-800'>
-                    <p onClick={changeExperience} className="text-2xl font-bold p-4">Experience</p>
-                    <div className={`${experience ? 'p-4 w-full h-[20rem] rounded-b-xl overflow-y-auto' : 'px-4 w-full h-[0rem] text-transparent overflow-hidden'} bg-gray-200 flex flex-col gap-4 duration-300`}>
+                    <div onClick={changeExperience} className="flex items-center justify-between text-2xl font-bold p-4">
+                        <p>Experience</p>
+                        <FontAwesomeIcon icon={faChevronRight} className={`${experience ? 'rotate-90' : 'rotate-0'} duration-500`} />
+                    </div>
+                    <div className={`${experience ? 'p-4 w-full h-[20rem] rounded-b-xl overflow-y-auto' : 'px-4 w-full h-[0rem] text-transparent overflow-hidden'} bg-gray-200 flex flex-col gap-4 duration-500`}>
                         <p className="text-xl font-bold leading-[1.75rem]">Coordinated Coding Competetion</p>
                         <div>
                             <p className="text-lg">
@@ -106,10 +115,14 @@ function Contents() {
             {/* Projects */}
             <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
                 <div className='flex flex-col bg-gray-300 rounded-xl text-gray-800'>
-                    <p onClick={changeProject} className="text-2xl font-bold p-4">Projects</p>
-                    <div className={`${projects ? 'p-2 w-full h-[20rem] rounded-b-xl overflow-y-auto' : 'px-4 w-full h-[0rem] text-transparent overflow-hidden'} bg-gray-200 flex flex-col gap-4 duration-300`}>
+                    <div onClick={changeProject} className="flex items-center justify-between text-2xl font-bold p-4">
+                        <p>Project</p>
+                        <FontAwesomeIcon icon={faChevronRight} className={`${projects ? 'rotate-90' : 'rotate-0'} duration-500`} />
+                    </div>
+
+                    <div className={`${projects ? 'p-2 w-full h-[20rem] rounded-b-xl overflow-y-auto' : 'px-4 w-full h-[0rem] text-transparent overflow-hidden'} bg-gray-200 flex flex-col gap-4 duration-500`}>
                         <div className='border-[1px] border-black rounded-lg p-4 flex flex-col gap-3'>
-                            <p className="text-xl font-bold leading-[1.75rem]">EATABLES<br/>Location-Based Food Discovery Platform</p>
+                            <p className="text-xl font-bold leading-[1.75rem]">EATABLES<br />Location-Based Food Discovery Platform</p>
                             <p className="text-lg font-bold">
                                 <a href="https://www.google.com">Know more -</a>
                             </p>
@@ -121,8 +134,11 @@ function Contents() {
             {/* Skills */}
             <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
                 <div className='flex flex-col bg-gray-300 rounded-xl text-gray-800'>
-                    <p onClick={changeSkills} className="text-2xl font-bold p-4">Skills</p>
-                    <div className={`${skills ? 'p-4 w-full h-[20rem] rounded-b-xl overflow-y-auto' : 'px-4 w-full h-[0rem] text-transparent overflow-hidden'} bg-gray-200 flex flex-col gap-4 duration-300`}>
+                    <div onClick={changeSkills} className="flex items-center justify-between text-2xl font-bold p-4">
+                        <p>Skills</p>
+                        <FontAwesomeIcon icon={faChevronRight} className={`${skills ? 'rotate-90' : 'rotate-0'} duration-500`} />
+                    </div>
+                    <div className={`${skills ? 'p-4 w-full h-[20rem] rounded-b-xl overflow-y-auto' : 'px-4 w-full h-[0rem] text-transparent overflow-hidden'} bg-gray-200 flex flex-col gap-4 duration-500`}>
                         <p className="text-xl font-bold">
                             Secured first place in National level coding competition (09/2022)
                         </p>
@@ -137,8 +153,11 @@ function Contents() {
             {/* Education */}
             <div className="px-8 py-4 w-full flex flex-col gap-4 text-white">
                 <div className='flex flex-col bg-gray-300 rounded-xl text-gray-800'>
-                    <p onClick={changeEducation} className="text-2xl font-bold p-4">Education and Certifications</p>
-                    <div className={`${education ? 'p-4 w-full h-[20rem] rounded-b-xl overflow-y-auto' : 'px-4 w-full h-[0rem] text-transparent overflow-hidden'} bg-gray-200 flex flex-col gap-4 duration-300`}>
+                    <div onClick={changeEducation} className="flex items-center justify-between text-2xl font-bold p-4">
+                        <p>Education and Certifications</p>
+                        <FontAwesomeIcon icon={faChevronRight} className={`${education ? 'rotate-90' : 'rotate-0'} duration-500`} />
+                    </div>
+                    <div className={`${education ? 'p-4 w-full h-[20rem] rounded-b-xl overflow-y-auto' : 'px-4 w-full h-[0rem] text-transparent overflow-hidden'} bg-gray-200 flex flex-col gap-4 duration-500`}>
                         <p className="text-xl font-bold">
                             Secured first place in National level coding competition (09/2022)
                         </p>
