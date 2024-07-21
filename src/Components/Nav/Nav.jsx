@@ -4,9 +4,26 @@ import React, { useState } from 'react';
 
 function Nav() {
     const [bars, setBars] = useState(false);
+    const [option, setOption] = useState('Home');
 
     function barsClicked() {
         setBars(!bars);
+    }
+
+    function setHome() {
+        setOption("Home");
+    }
+    function setQualifications() {
+        setOption("Qualifications");
+    }
+    function setProjects() {
+        setOption("Projects");
+    }
+    function setSkills() {
+        setOption("Skills");
+    }
+    function setContact() {
+        setOption("Contact");
     }
 
     return (
@@ -22,7 +39,7 @@ function Nav() {
 
             <nav className='md:hidden fixed w-full top-0 font-semibold bg-black p-5 flex justify-between items-center'>
                 <div>
-                    <h1 className='text-white'>MENU</h1>
+                    <h1 className='text-white'>{option}</h1>
                 </div>
                 <div>
                     <FontAwesomeIcon icon={faBars} color='white' onClick={barsClicked} />
@@ -32,11 +49,11 @@ function Nav() {
             <div className={`fixed top-0 right-0 h-full bg-black text-white p-5 transition-transform duration-300 ${bars ? 'translate-x-0' : 'translate-x-full'}`}>
                 <div className='flex flex-col items-end'>
                     <button onClick={barsClicked} className='mb-5 text-2xl'>&times;</button>
-                    <h1><a href="#HOME" className='block py-2 duration-200 hover:text-gray-300'>HOME</a></h1>
-                    <h1><a href="#PROJECTS" className='block py-2 duration-200 hover:text-gray-300'>PROJECTS</a></h1>
-                    <h1><a href="#EDUCATIONAL" className='block py-2 duration-200 hover:text-gray-300'>QUALIFICATION</a></h1>
-                    <h1><a href="#SKILLS" className='block py-2 duration-200 hover:text-gray-300'>SKILLS</a></h1>
-                    <h1><a href="#CONTACT" className='block py-2 duration-200 hover:text-gray-300'>CONTACT</a></h1>
+                    <h1><a href="#HOME" className='block py-2 duration-200 hover:text-gray-300' onClick={setHome}>HOME</a></h1>
+                    <h1><a href="#PROJECTS" className='block py-2 duration-200 hover:text-gray-300' onClick={setProjects}>PROJECTS</a></h1>
+                    <h1><a href="#EDUCATIONAL" className='block py-2 duration-200 hover:text-gray-300' onClick={setQualifications}>QUALIFICATION</a></h1>
+                    <h1><a href="#SKILLS" className='block py-2 duration-200 hover:text-gray-300' onClick={setSkills}>SKILLS</a></h1>
+                    <h1><a href="#CONTACT" className='block py-2 duration-200 hover:text-gray-300' onClick={setContact}>CONTACT</a></h1>
                     <h1><a href="#RESUME" className='block py-2 duration-200 hover:text-gray-300'>RESUME</a></h1>
                 </div>
             </div>
