@@ -10,20 +10,9 @@ function Nav() {
         setBars(!bars);
     }
 
-    function setHome() {
-        setOption("Home");
-    }
-    function setQualifications() {
-        setOption("Qualifications");
-    }
-    function setProjects() {
-        setOption("Projects");
-    }
-    function setSkills() {
-        setOption("Skills");
-    }
-    function setContact() {
-        setOption("Contact");
+    function optionClicked(optionName) {
+        setOption(optionName);
+        setBars(false);
     }
 
     return (
@@ -46,15 +35,17 @@ function Nav() {
                 </div>
             </nav>
 
-            <div className={`fixed top-0 right-0 h-full bg-black text-white p-5 transition-transform duration-300 ${bars ? 'translate-x-0' : 'translate-x-full'}`}>
+            {bars && <div className='fixed top-0 left-0 w-full h-full bg-black opacity-90 z-10'></div>}
+
+            <div className={`fixed top-0 right-0 h-full bg-[rgba(255,255,255,0.1)] text-white p-5 transition-transform duration-300 ${bars ? 'translate-x-0' : 'translate-x-full'} z-20`}>
                 <div className='flex flex-col items-end'>
                     <button onClick={barsClicked} className='mb-5 text-2xl'>&times;</button>
-                    <h1><a href="#HOME" className='block py-2 duration-200 hover:text-gray-300' onClick={setHome}>HOME</a></h1>
-                    <h1><a href="#PROJECTS" className='block py-2 duration-200 hover:text-gray-300' onClick={setProjects}>PROJECTS</a></h1>
-                    <h1><a href="#EDUCATIONAL" className='block py-2 duration-200 hover:text-gray-300' onClick={setQualifications}>QUALIFICATION</a></h1>
-                    <h1><a href="#SKILLS" className='block py-2 duration-200 hover:text-gray-300' onClick={setSkills}>SKILLS</a></h1>
-                    <h1><a href="#CONTACT" className='block py-2 duration-200 hover:text-gray-300' onClick={setContact}>CONTACT</a></h1>
-                    <h1><a href="#RESUME" className='block py-2 duration-200 hover:text-gray-300'>RESUME</a></h1>
+                    <h1><a href="#HOME" className='block py-2 duration-200 hover:text-gray-300' onClick={() => optionClicked('Home')}>HOME</a></h1>
+                    <h1><a href="#PROJECTS" className='block py-2 duration-200 hover:text-gray-300' onClick={() => optionClicked('Projects')}>PROJECTS</a></h1>
+                    <h1><a href="#EDUCATIONAL" className='block py-2 duration-200 hover:text-gray-300' onClick={() => optionClicked('Qualifications')}>QUALIFICATION</a></h1>
+                    <h1><a href="#SKILLS" className='block py-2 duration-200 hover:text-gray-300' onClick={() => optionClicked('Skills')}>SKILLS</a></h1>
+                    <h1><a href="#CONTACT" className='block py-2 duration-200 hover:text-gray-300' onClick={() => optionClicked('Contact')}>CONTACT</a></h1>
+                    <h1><a href="#RESUME" className='block py-2 duration-200 hover:text-gray-300' onClick={barsClicked}>RESUME</a></h1>
                 </div>
             </div>
         </>
