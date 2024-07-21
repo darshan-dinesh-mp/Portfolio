@@ -39,7 +39,7 @@ function Nav() {
             {bars && <div className='fixed top-0 left-0 w-full h-full bg-black opacity-50 z-10'></div>}
 
             {/* Sidebar */}
-            <div className={`fixed top-0 right-0 h-full bg-slate-950 text-white p-5 transition-transform duration-300 ${bars ? 'translate-x-0' : 'translate-x-full'} z-20`}>
+            <div className={`fixed top-0 right-0 h-full bg-[#1f0812] text-white p-5 transition-transform duration-300 ${bars ? 'translate-x-0' : 'translate-x-full'} z-20`}>
                 <div className='flex flex-col items-end'>
                     <button onClick={barsClicked} className='mb-5 text-2xl'>&times;</button>
                     <h1><a href="#HOME" className='block py-2 duration-200 hover:text-gray-300' onClick={() => optionClicked('Home')}>HOME</a></h1>
