@@ -93,7 +93,7 @@ function Nav() {
                     <h1>
                         <a
                             href="#HOME"
-                            className={`block py-2 duration-200 ${option === 'Home' ? 'text-gray-300' : 'hover:text-gray-300'}`}
+                            className={`block py-2 duration-200 ${option === 'Home' ? 'text-white font-semibold' : 'text-gray-400'}`}
                             onClick={() => optionClicked('Home')}
                         >
                             HOME
@@ -102,7 +102,7 @@ function Nav() {
                     <h1>
                         <a
                             href="#PROJECTS"
-                            className={`block py-2 duration-200 ${option === 'Projects' ? 'text-gray-300' : 'hover:text-gray-300'}`}
+                            className={`block py-2 duration-200 ${option === 'Projects' ? 'text-white font-semibold' : 'text-gray-400'}`}
                             onClick={() => optionClicked('Projects')}
                         >
                             PROJECTS
@@ -111,7 +111,7 @@ function Nav() {
                     <h1>
                         <a
                             href="#EDUCATIONAL"
-                            className={`block py-2 duration-200 ${option === 'Qualifications' ? 'text-gray-300' : 'hover:text-gray-300'}`}
+                            className={`block py-2 duration-200 ${option === 'Qualifications' ? 'text-white font-semibold' : 'text-gray-400'}`}
                             onClick={() => optionClicked('Qualifications')}
                         >
                             QUALIFICATION
@@ -120,7 +120,7 @@ function Nav() {
                     <h1>
                         <a
                             href="#SKILLS"
-                            className={`block py-2 duration-200 ${option === 'Skills' ? 'text-gray-300' : 'hover:text-gray-300'}`}
+                            className={`block py-2 duration-200 ${option === 'Skills' ? 'text-white font-semibold' : 'text-gray-400'}`}
                             onClick={() => optionClicked('Skills')}
                         >
                             SKILLS
@@ -129,7 +129,7 @@ function Nav() {
                     <h1>
                         <a
                             href="#CONTACT"
-                            className={`block py-2 duration-200 ${option === 'Contact' ? 'text-gray-300' : 'hover:text-gray-300'}`}
+                            className={`block py-2 duration-200 ${option === 'Contact' ? 'text-white font-semibold' : 'text-gray-400'}`}
                             onClick={() => optionClicked('Contact')}
                         >
                             CONTACT
@@ -138,7 +138,7 @@ function Nav() {
                     <h1>
                         <a
                             href="#RESUME"
-                            className={`block py-2 duration-200 ${option === 'Resume' ? 'text-gray-300' : 'hover:text-gray-300'}`}
+                            className={`block py-2 duration-200 ${option === 'Resume' ? 'text-white font-semibold' : 'text-gray-400'}`}
                             onClick={() => optionClicked('Resume')}
                         >
                             RESUME
