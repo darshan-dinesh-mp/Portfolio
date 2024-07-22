@@ -1,0 +1,17 @@
+.skill-card {
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card span {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.skill-card:hover span {
+    opacity: 1;
+}

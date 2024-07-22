@@ -38,15 +38,6 @@ function Nav() {
                 </h1>
                 <h1>
                     <a
-                        href="#EDUCATIONAL"
-                        className={`duration-200 ${option === 'Qualifications' ? 'text-white' : 'hover:text-white'}`}
-                        onClick={() => optionClicked('Qualifications')}
-                    >
-                        QUALIFICATION
-                    </a>
-                </h1>
-                <h1>
-                    <a
                         href="#SKILLS"
                         className={`duration-200 ${option === 'Skills' ? 'text-white' : 'hover:text-white'}`}
                         onClick={() => optionClicked('Skills')}
@@ -106,15 +97,6 @@ function Nav() {
                             onClick={() => optionClicked('Projects')}
                         >
                             PROJECTS
-                        </a>
-                    </h1>
-                    <h1>
-                        <a
-                            href="#EDUCATIONAL"
-                            className={`block py-2 duration-200 ${option === 'Qualifications' ? 'text-white font-semibold' : 'text-gray-400'}`}
-                            onClick={() => optionClicked('Qualifications')}
-                        >
-                            QUALIFICATION
                         </a>
                     </h1>
                     <h1>
