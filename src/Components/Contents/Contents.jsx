@@ -21,17 +21,17 @@ function Contents() {
         {
             title: 'Eatables',
             description: 'Food Discovery and Review Platform.',
-            videoSrc: 'path_to_your_video1.mp4'
+            videoSrc: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
         },
         {
             title: 'SMAPP',
             description: 'Student Mentorship and Assessment Platform for NMAMIT, NITTE.',
-            videoSrc: 'path_to_your_video2.mp4'
+            videoSrc: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
         },
         {
             title: 'ConverTo',
             description: 'Mobile app for converting between various measurements units.',
-            videoSrc: 'path_to_your_video3.mp4'
+            videoSrc: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
         }
     ];
 
@@ -48,12 +48,6 @@ function Contents() {
                             <p>{project.description}</p>
                         </div>
                         <div className='laptop-frame'>
-                            <video className='project-video' controls>
-                                <source src={project.videoSrc} type='video/mp4' />
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div className='mobile-frame'>
                             <video className='project-video' controls>
                                 <source src={project.videoSrc} type='video/mp4' />
                                 Your browser does not support the video tag.
