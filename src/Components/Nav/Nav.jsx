@@ -17,7 +17,7 @@ function Nav() {
 
     return (
         <>
-            <nav className='hidden md:flex fixed w-full top-0 font-semibold bg-black text-xs text-gray-500 items-center justify-center gap-20 p-5'>
+            <nav className='hidden md:flex fixed z-10 w-full top-0 font-semibold bg-black text-xs text-gray-500 items-center justify-center gap-20 p-5'>
                 <h1>
                     <a
                         href="#HOME"
@@ -65,7 +65,7 @@ function Nav() {
                 </h1>
             </nav>
 
-            <nav className='md:hidden fixed w-full top-0 font-semibold bg-black p-5 flex justify-between items-center'>
+            <nav className='md:hidden fixed z-10 w-full top-0 font-semibold bg-black p-5 flex justify-between items-center'>
                 <div>
                     <h1 className='text-white'>{option}</h1>
                 </div>
