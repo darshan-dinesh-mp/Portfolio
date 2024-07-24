@@ -21,17 +21,17 @@ function Contents() {
         {
             title: 'Eatables',
             description: 'Food Discovery and Review Platform.',
-            videoSrc: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+            videoSrc: '../../../public/Images/eatables_SR.mp4'
         },
         {
             title: 'SMAPP',
             description: 'Student Mentorship and Assessment Platform for NMAMIT, NITTE.',
-            videoSrc: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+            videoSrc: '../../../public/Images/eatables_SR.mp4'
         },
         {
             title: 'ConverTo',
             description: 'Mobile app for converting between various measurements units.',
-            videoSrc: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+            videoSrc: '../../../public/Images/eatables_SR.mp4'
         }
     ];
 
