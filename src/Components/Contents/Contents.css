@@ -58,9 +58,9 @@
 
 .mobile-frame {
     position: relative;
-    height: 640px;
+    height: 320px;
     /* Adjust the width as needed */
-    width: 360px;
+    width: 180px;
     /* Adjust the height as needed */
     background-size: contain;
 }
