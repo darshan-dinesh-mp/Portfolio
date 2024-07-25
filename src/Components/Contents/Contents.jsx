@@ -21,22 +21,22 @@ function Contents() {
         {
             title: 'Eatables',
             description: 'Food Discovery and Review Platform.',
-            videoSrc: '../../../public/Images/eatables_SR.mp4'
+            videoSrc: 'https://drive.google.com/file/d/11cP1VRfHH5BBcVmq9OP2j8NZ8L6JQHvT/preview'
         },
         {
             title: 'SMAPP',
             description: 'Student Mentorship and Assessment Platform for NMAMIT, NITTE.',
-            videoSrc: '../../../public/Images/eatables_SR.mp4'
+            videoSrc: 'https://drive.google.com/file/d/11cP1VRfHH5BBcVmq9OP2j8NZ8L6JQHvT/preview'
         },
         {
             title: 'ConverTo',
             description: 'Mobile app for converting between various measurements units.',
-            videoSrc: '../../../public/Images/eatables_SR.mp4'
+            videoSrc: 'https://drive.google.com/file/d/11cP1VRfHH5BBcVmq9OP2j8NZ8L6JQHvT/preview'
         }
     ];
 
     return (
-        <div className='flex flex-col items-center justify-center gap-10 bg-gradient-to-b from-black to-[#1f0812] p-10'>
+        <div className='flex flex-col items-center justify-center gap-10 bg-gradient-to-t from-black to-[#1f0812] p-10'>
             <div id='PROJECTS' className='w-[90vw] lg:w-[70vw] flex flex-col items-center justify-center'>
                 <div className='text-white mb-8'>
                     <h1 className='text-4xl font-bold'>Projects</h1>
@@ -47,12 +47,8 @@ function Contents() {
                             <h2>{project.title}</h2>
                             <p>{project.description}</p>
                         </div>
-                        <div className='laptop-frame'>
-                            <video className='project-video' controls>
-                                <source src={project.videoSrc} type='video/mp4' />
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
+                        <iframe src={project.videoSrc} height="100%" allow="autoplay">
+                        </iframe>
                     </div>
                 ))}
             </div>

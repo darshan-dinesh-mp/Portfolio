@@ -20,8 +20,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    background-color: #2e1a24;
+    /* justify-content: space-between; */
+    /* background-color: #2e1a24; */
+    background-color: #000000;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -47,9 +48,8 @@
 }
 
 .laptop-frame {
-    width: 50%;
     /* Adjust this to make the video smaller */
-    height: auto;
+    background-color: #2e1a24;
 }
 
 .project-video {
@@ -63,21 +63,8 @@
 @media (max-width: 720px) {
     .project-display {
         flex-direction: column;
-    }
-
-    .project-info {
-        padding-right: 0;
-        padding-bottom: 20px;
-    }
-
-    .laptop-frame {
-        width: 100%;
-        /* Full width on mobile */
-        height: auto;
-    }
-
-    .project-video {
-        width: 100%;
-        height: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
     }
 }
