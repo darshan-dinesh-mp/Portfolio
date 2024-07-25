@@ -7,10 +7,10 @@ import { faC } from '@fortawesome/free-solid-svg-icons';
 function Contents() {
     const skills = [
         { icon: faJava, name: 'Java' },
-        { icon: faC, name: 'C' },
+        { icon: faC, name: '' },
         { icon: faHtml5, name: 'HTML5' },
         { icon: faCss3, name: 'CSS3' },
-        { icon: faReact, name: 'React & React Native' },
+        { icon: faReact, name: 'React' },
         { icon: faPhp, name: 'PHP' },
         { icon: faLaravel, name: 'Laravel' },
         { icon: faGitAlt, name: 'Git' },
@@ -62,12 +62,12 @@ function Contents() {
                 <div className='text-white mb-8'>
                     <h1 className='text-4xl font-bold'>Skills</h1>
                 </div>
-                <div className='w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8'>
+                <div className='w-full grid grid-cols-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8'>
                     {skills.map((skill) => (
                         <div
                             key={skill.name}
                             className='skill-card bg-[#2e1a24] p-6 rounded-lg shadow-lg flex flex-col items-center justify-center transition-transform transform hover:translate-y-[-5px]'>
-                            <FontAwesomeIcon icon={skill.icon} className='text-2xl text-white mb-2' />
+                            <FontAwesomeIcon icon={skill.icon} className='text-3xl text-white mb-2' />
                             <span className='text-gray-300'>{skill.name}</span>
                         </div>
                     ))}
