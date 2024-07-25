@@ -26,7 +26,7 @@ function Contents() {
         {
             title: 'SMAPP',
             description: 'Student Mentorship and Assessment Platform for NMAMIT, NITTE.',
-            videoSrc: 'https://drive.google.com/file/d/11cP1VRfHH5BBcVmq9OP2j8NZ8L6JQHvT/preview',
+            videoSrc: 'https://drive.google.com/file/d/1Uc1b8Y1o2O6uCTQ1HfgBXxrdlPQn7IY-/preview',
         },
         {
             title: 'ConverTo',
