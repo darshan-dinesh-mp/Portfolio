@@ -149,13 +149,13 @@ function Contents() {
             <footer className='w-full bg-[#1f0812] text-gray-400 py-6 mt-10'>
                 <div className='flex flex-col items-center'>
                     <p className='text-center text-sm'>&copy; {new Date().getFullYear()} Darshan Dinesh. All rights reserved.</p>
-                    <p className='text-center text-sm mt-2 flex items-center justify-center'>Contact me:
-                        <div className='ml-2 duration-300 hover:text-white'>
-                            <a href='mailto:darshandineshmp@gmail.com'>darshandineshmp@gmail.com</a>
-                        </div>
+                    <p className='text-center text-sm mt-2 flex items-center justify-center'>
+                        Contact me:
+                        <a href='mailto:darshandineshmp@gmail.com' className='ml-2 hover:scale-105 transition-transform duration-300'>darshandineshmp@gmail.com</a>
                     </p>
                 </div>
             </footer>
+
 
         </div>
     );

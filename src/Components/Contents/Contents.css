@@ -47,16 +47,33 @@ footer {
 footer a {
     font-weight: 600;
     text-decoration: none;
+    color: #gray-400;
 }
 
-.email-link a {
-    text-decoration: none;
-    transition: transform 0.3s ease;
-}
-
-.email-link a:hover {
+footer a:hover {
+    color: #ffffff;
+    /* Change text color on hover */
     transform: scale(1.1);
+    /* Scale up the email link */
 }
+
+@media (max-width: 720px) {
+    footer {
+        padding: 1rem;
+        /* Adjust padding for smaller screens */
+    }
+
+    footer p {
+        font-size: 0.875rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    footer a {
+        font-size: 0.875rem;
+        /* Adjust font size for smaller screens */
+    }
+}
+
 
 
 /* Media Queries */
