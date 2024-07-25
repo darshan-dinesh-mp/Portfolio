@@ -117,7 +117,7 @@ function Contents() {
                 <div className='text-white mb-8'>
                     <h1 className='text-4xl font-bold'>Skills</h1>
                 </div>
-                <div className='w-full grid grid-cols-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8'>
+                <div className='w-full grid grid-cols-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-8'>
                     {skills.map((skill) => (
                         <div
                             key={skill.name}
