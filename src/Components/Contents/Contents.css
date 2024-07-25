@@ -31,10 +31,33 @@
     align-items: center;
     justify-content: center;
     width: 50%;
-    height: 18rem; /* Adjust height as needed */
+    height: 18rem;
+    /* Adjust height as needed */
     border-radius: 5px;
     overflow: hidden;
 }
+
+footer {
+    background-color: #1f0812;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+footer a {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.email-link a {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.email-link a:hover {
+    transform: scale(1.1);
+}
+
 
 /* Media Queries */
 @media (max-width: 720px) {
@@ -44,11 +67,13 @@
         justify-content: center;
         gap: 2rem;
     }
+
     .project-info {
         width: 100%;
         padding-right: 0;
         text-align: left;
     }
+
     .project-video {
         width: 100%;
         height: auto;

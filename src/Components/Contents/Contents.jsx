@@ -2,7 +2,7 @@ import React from 'react';
 import './Contents.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCss3, faGitAlt, faGithub, faHtml5, faJava, faLaravel, faPhp, faReact } from '@fortawesome/free-brands-svg-icons';
-import { faC, faEnvelope, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faC, faEnvelope, faArrowUpRightFromSquare, faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Contents() {
@@ -23,16 +23,19 @@ function Contents() {
             title: 'Eatables',
             description: 'Food Discovery and Review Platform.',
             videoSrc: 'https://drive.google.com/file/d/11cP1VRfHH5BBcVmq9OP2j8NZ8L6JQHvT/preview',
+            githubLink: 'https://github.com/darshan-dinesh-mp/eatables.git',
         },
         {
             title: 'SMAPP',
             description: 'Student Mentorship and Assessment Platform for NMAMIT, NITTE.',
             videoSrc: 'https://drive.google.com/file/d/1Uc1b8Y1o2O6uCTQ1HfgBXxrdlPQn7IY-/preview',
+            githubLink: 'https://github.com/darshan-dinesh-mp/student-connect.git',
         },
         {
             title: 'ConverTo',
             description: 'Mobile app for converting between various measurements units.',
             videoSrc: 'https://drive.google.com/file/d/1S2QUm7gj_g-Nv14QYanpT8rPNYnZeaNV/preview',
+            githubLink: 'https://github.com/darshan-dinesh-mp/converto-app.git',
         }
     ];
 
@@ -69,9 +72,10 @@ function Contents() {
                             href='https://github.com/darshan-dinesh-mp?tab=repositories'
                             className='hidden md:block text-2xl hover:translate-x-1 duration-500'
                             target='_blank'
-                            rel='noopener noreferrer'>
+                            rel='noopener noreferrer'
+                            title='See more project'>
                             Show more
-                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} title='See more project' className='ml-2  hover:rotate-12 duration-500' />
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} title='See more project' className='ml-2 hover:rotate-12 duration-500' />
                         </a>
                         <a
                             href='https://github.com/darshan-dinesh-mp?tab=repositories'
@@ -79,7 +83,7 @@ function Contents() {
                             target='_blank'
                             rel='noopener noreferrer'
                             title='See more project'>
-                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} title='See more project' />
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} title='See more project' className='hover:rotate-12 duration-500' />
                         </a>
                     </div>
                 </div>
@@ -88,6 +92,13 @@ function Contents() {
                         <div className='project-info'>
                             <h2>{project.title}</h2>
                             <p>{project.description}</p>
+                            <a
+                                href={project.githubLink}
+                                className='text-white flex items-center justify-center gap-2 font-bold mt-5 duration-300 hover:translate-x-1'
+                                target='_blank'>
+                                GitHub
+                                <FontAwesomeIcon icon={faArrowRightLong} />
+                            </a>
                         </div>
                         <div className='project-video'>
                             <iframe
@@ -134,6 +145,17 @@ function Contents() {
                     ))}
                 </div>
             </div>
+
+            <footer className='w-full bg-[#1f0812] text-gray-400 py-6 mt-10'>
+                <div className='flex flex-col items-center'>
+                    <p className='text-center text-sm'>&copy; {new Date().getFullYear()} Darshan Dinesh. All rights reserved.</p>
+                    <p className='text-center text-sm mt-2 flex items-center justify-center'>Contact me:
+                        <div className='ml-2 duration-300 hover:text-white'>
+                            <a href='mailto:darshandineshmp@gmail.com'>darshandineshmp@gmail.com</a>
+                        </div>
+                    </p>
+                </div>
+            </footer>
 
         </div>
     );
