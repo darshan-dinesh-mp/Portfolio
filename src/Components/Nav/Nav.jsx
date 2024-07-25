@@ -56,8 +56,8 @@ function Nav() {
                 </h1>
                 <h1>
                     <a
-                        href="#RESUME"
-                        className={`duration-200 ${option === 'Resume' ? 'text-white' : 'hover:text-white'}`}
+                        href="https://drive.google.com/file/d/174YNl2t_h4POLdFpMkN8W0dtmq3nA2Uh/view"
+                        className={`duration-200 ${option === 'Resume' ? 'text-white' : 'hover:text-white'} border-2 rounded-md py-1 px-2 hover:bg-white hover:text-black`}
                         onClick={() => optionClicked('Resume')}
                     >
                         RESUME
@@ -119,8 +119,8 @@ function Nav() {
                     </h1>
                     <h1>
                         <a
-                            href="#RESUME"
-                            className={`block py-2 duration-200 ${option === 'Resume' ? 'text-white font-semibold' : 'text-gray-400'}`}
+                            href="https://drive.google.com/file/d/174YNl2t_h4POLdFpMkN8W0dtmq3nA2Uh/view"
+                            className={`block py-2 duration-200 ${option === 'Resume' ? 'text-white font-semibold' : 'text-gray-400'} font-bold`}
                             onClick={() => optionClicked('Resume')}
                         >
                             RESUME
