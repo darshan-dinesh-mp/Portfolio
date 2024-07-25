@@ -1,8 +1,8 @@
 import React from 'react';
 import './Contents.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCss3, faGitAlt, faGithub, faHtml5, faJava, faLaravel, faPhp, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faC } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Contents() {
     const skills = [
@@ -21,17 +21,17 @@ function Contents() {
         {
             title: 'Eatables',
             description: 'Food Discovery and Review Platform.',
-            videoSrc: 'https://drive.google.com/file/d/11cP1VRfHH5BBcVmq9OP2j8NZ8L6JQHvT/preview'
+            videoSrc: 'https://drive.google.com/file/d/11cP1VRfHH5BBcVmq9OP2j8NZ8L6JQHvT/preview',
         },
         {
             title: 'SMAPP',
             description: 'Student Mentorship and Assessment Platform for NMAMIT, NITTE.',
-            videoSrc: 'https://drive.google.com/file/d/11cP1VRfHH5BBcVmq9OP2j8NZ8L6JQHvT/preview'
+            videoSrc: 'https://drive.google.com/file/d/11cP1VRfHH5BBcVmq9OP2j8NZ8L6JQHvT/preview',
         },
         {
             title: 'ConverTo',
             description: 'Mobile app for converting between various measurements units.',
-            videoSrc: 'https://drive.google.com/file/d/11cP1VRfHH5BBcVmq9OP2j8NZ8L6JQHvT/preview'
+            videoSrc: 'https://drive.google.com/file/d/11cP1VRfHH5BBcVmq9OP2j8NZ8L6JQHvT/preview',
         }
     ];
 
@@ -47,8 +47,14 @@ function Contents() {
                             <h2>{project.title}</h2>
                             <p>{project.description}</p>
                         </div>
-                        <iframe src={project.videoSrc} height="100%" allow="autoplay">
-                        </iframe>
+                        <div className='project-video'>
+                            <iframe 
+                                src={project.videoSrc} 
+                                width="100%" 
+                                height="100%" 
+                                allow="autoplay">
+                            </iframe>
+                        </div>
                     </div>
                 ))}
             </div>
