@@ -9,7 +9,7 @@ function Banner() {
                     <h1 className='text-white font-semibold text-3xl'>Hi, I am Darshan</h1>
                     <h1 className='text-white font-semibold text-l'>A passionate and dedicated programmer with a strong background in Web Development and Android Development.</h1>
                 </div>
-                <div className='text-white'>
+                <div className='w-[50vw] text-white'>
                     <img src="/Images/profile.png" alt="Image not available" className={b.image} />
                 </div>
             </div>
