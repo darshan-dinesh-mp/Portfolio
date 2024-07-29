@@ -57,7 +57,7 @@ function Nav() {
                 <h1>
                     <a
                         href="https://drive.google.com/file/d/174YNl2t_h4POLdFpMkN8W0dtmq3nA2Uh/view"
-                        className={`duration-200 ${option === 'Resume' ? 'text-white' : 'hover:text-white'} border-2 rounded-md py-1 px-2 hover:bg-white hover:text-black`}
+                        className={`duration-200 ${option === 'Resume' ? 'text-white' : 'hover:text-black'} border-2 rounded-md py-1 px-2 hover:bg-white hover:text-black`}
                         onClick={() => optionClicked('Resume')}
                     >
                         RESUME
