@@ -58,7 +58,7 @@ function Contents() {
     ];
 
     return (
-        <div className='flex flex-col items-center justify-center gap-10 bg-[#1f0812] p-10'>
+        <div className='flex flex-col items-center justify-center gap-10 bg-[#1f0812] p-5 md:p-10'>
 
             <div id='PROJECTS' className='w-[90vw] lg:w-[70vw] flex flex-col items-center justify-center'>
                 <div className='text-white mb-8 grid grid-cols-3 items-center justify-between w-full p-4'>
