@@ -22,19 +22,19 @@ function Contents() {
         {
             title: 'Eatables',
             description: 'Food Discovery and Review Platform.',
-            videoSrc: 'https://drive.google.com/file/d/11cP1VRfHH5BBcVmq9OP2j8NZ8L6JQHvT/preview',
+            videoSrc: '/projects/eatables_SR.mp4',
             githubLink: 'https://github.com/darshan-dinesh-mp/eatables.git',
         },
         {
             title: 'SMAP',
             description: 'Student Mentorship and Assessment Platform for NMAMIT, NITTE.',
-            videoSrc: 'https://drive.google.com/file/d/1Uc1b8Y1o2O6uCTQ1HfgBXxrdlPQn7IY-/preview',
+            videoSrc: '/projects/smap_SR.mp4',
             githubLink: 'https://github.com/darshan-dinesh-mp/student-connect.git',
         },
         {
             title: 'ConverTo',
             description: 'Mobile app for converting between various measurements units.',
-            videoSrc: 'https://drive.google.com/file/d/1S2QUm7gj_g-Nv14QYanpT8rPNYnZeaNV/preview',
+            videoSrc: '/projects/ConverTo_SR.mp4',
             githubLink: 'https://github.com/darshan-dinesh-mp/converto-app.git',
         }
     ];
