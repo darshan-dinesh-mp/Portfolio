@@ -125,8 +125,8 @@ function Contents() {
                         <div
                             key={skill.name}
                             className='skill-card bg-[#2e1a24] p-6 rounded-lg shadow-lg flex flex-col items-center justify-center transition-transform transform hover:translate-y-[-5px]'>
-                            <FontAwesomeIcon icon={skill.icon} className='text-3xl text-white mb-2' />
-                            <span className='text-gray-300'>{skill.name}</span>
+                            <FontAwesomeIcon icon={skill.icon} className='text-2xl md:text-3xl text-white mb-2' />
+                            <span className='text-gray-300 text-sm md:text-base'>{skill.name}</span>
                         </div>
                     ))}
                 </div>
