@@ -74,19 +74,4 @@ footer a:hover {
         width: 100%;
         height: auto;
     }
-
-    footer {
-        padding: 1rem;
-        /* Adjust padding for smaller screens */
-    }
-
-    footer p {
-        font-size: 0.875rem;
-        /* Adjust font size for smaller screens */
-    }
-
-    footer a {
-        font-size: 0.875rem;
-        /* Adjust font size for smaller screens */
-    }
 }
