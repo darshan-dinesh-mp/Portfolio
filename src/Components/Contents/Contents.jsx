@@ -101,12 +101,15 @@ function Contents() {
                             </a>
                         </div>
                         <div className='project-video'>
-                            <iframe
+                            <video
                                 src={project.videoSrc}
                                 width="100%"
                                 height="100%"
-                                allow="autoplay">
-                            </iframe>
+                                autoPlay
+                                loop
+                                muted
+                                playsInline>
+                            </video>
                         </div>
                     </div>
                 ))}
