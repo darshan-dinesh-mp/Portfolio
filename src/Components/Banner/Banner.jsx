@@ -9,9 +9,9 @@ function Banner() {
                     <h1 className='text-white font-semibold text-3xl'>Hi, I am Darshan</h1>
                     <h1 className='text-white font-semibold text-l'>A passionate and dedicated programmer with a strong background in Web Development and Android Development.</h1>
                 </div>
-                {/* <div className='text-white'>
-                    <img src="https://photos.fife.usercontent.google.com/pw/AP1GczPcARm3HHVZciqQ9PeWr51GXCFq1mVcSPsZTdwRt0RJF69Gqp9cjzPX=w400-h400-s-no-gm?authuser=1" alt="Image not available" className={b.image} />
-                </div> */}
+                <div className='text-white'>
+                    <img src="/Images/profile.png" alt="Image not available" className={b.image} />
+                </div>
             </div>
         </>
     )
