@@ -26,7 +26,7 @@ function Contents() {
             githubLink: 'https://github.com/darshan-dinesh-mp/eatables.git',
         },
         {
-            title: 'SMAPP',
+            title: 'SMAP',
             description: 'Student Mentorship and Assessment Platform for NMAMIT, NITTE.',
             videoSrc: 'https://drive.google.com/file/d/1Uc1b8Y1o2O6uCTQ1HfgBXxrdlPQn7IY-/preview',
             githubLink: 'https://github.com/darshan-dinesh-mp/student-connect.git',
