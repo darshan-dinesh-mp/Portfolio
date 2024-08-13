@@ -1,12 +1,10 @@
-/* Banner.module.css */
 .image {
-    width: 100%; /* Default size */
-    border-radius: 50%; /* Makes the image round */
+    width: 100%;
+    border-radius: 50%;
 }
 
-/* Mobile adjustments */
 @media (max-width: 768px) {
     .image {
-        width: 50%; /* Adjust as needed for smaller screens */
+        width: 50%;
     }
 }
