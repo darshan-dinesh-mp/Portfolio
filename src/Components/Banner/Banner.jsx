@@ -3,7 +3,7 @@ import b from './Banner.module.css'
 
 function Banner() {
     return (
-        <div id='HOME' className={`h-[100vh] w-[100vw] bg-gradient-to-b from-[#11050a] to-[#1f0812] flex flex-col-reverse md:flex-row items-center justify-center ${b['mobile-flex']}`}>
+        <div id='HOME' className={`h-[100vh] w-[100vw] bg-black flex flex-col-reverse md:flex-row items-center justify-center ${b['mobile-flex']}`}>
             <div className="w-[80vw] md:w-[30vw] p-4 flex flex-col items-center justify-center gap-5 ${b['text-container']}">
                 <h1 className='text-white font-semibold text-3xl text-center'>Hi, I am Darshan</h1>
                 <h1 className='text-white font-semibold text-l text-center'>A passionate and dedicated programmer with a strong background in Web Development and Android Development.</h1>

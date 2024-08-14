@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Contents.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCss3, faGitAlt, faGithub, faHtml5, faJava, faLaravel, faPhp, faReact } from '@fortawesome/free-brands-svg-icons';
@@ -6,6 +6,7 @@ import { faC, faEnvelope, faArrowUpRightFromSquare, faArrowRightLong } from '@fo
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Contents() {
+
     const skills = [
         { icon: faJava, name: 'Java' },
         { icon: faC, name: '' },
@@ -57,9 +58,49 @@ function Contents() {
         }
     ];
 
-    return (
-        <div className='flex flex-col items-center justify-center gap-10 bg-[#1f0812] p-5 md:p-10'>
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const newTab = window.open('', '_blank');
+
+        const form = newTab.document.createElement('form');
+        form.action = 'https://docs.google.com/forms/d/e/1FAIpQLSeVhNEtjlUp2-co2nCmM1_7RazxCMJNAux1YX23OVQmrekjXA/formResponse';
+        form.method = 'POST';
+
+        const nameInput = newTab.document.createElement('input');
+        nameInput.type = 'hidden';
+        nameInput.name = 'entry.1546317662';
+        nameInput.value = name;
+
+        const emailInput = newTab.document.createElement('input');
+        emailInput.type = 'hidden';
+        emailInput.name = 'entry.874628732';
+        emailInput.value = email;
+
+        const messageInput = newTab.document.createElement('input');
+        messageInput.type = 'hidden';
+        messageInput.name = 'entry.1693678078';
+        messageInput.value = message;
+
+        form.appendChild(nameInput);
+        form.appendChild(emailInput);
+        form.appendChild(messageInput);
+
+        newTab.document.body.appendChild(form);
+        form.submit();
+
+        setTimeout(() => {
+            window.location.href = 'https://darshandineshmp.vercel.app';
+        }, 2000);
+
+    };
+
+    return (
+        <div className='flex flex-col items-center justify-center gap-10 bg-black p-5 md:p-10'>
             <div id='PROJECTS' className='w-[90vw] lg:w-[70vw] flex flex-col items-center justify-center'>
                 <div className='text-white mb-8 grid grid-cols-3 items-center justify-between w-full p-4'>
                     <div></div>
@@ -149,17 +190,57 @@ function Contents() {
                 </div>
             </div>
 
+            <div className="contact-form text-gray-400 py-6 mt-10">
+                <h2>Write to me</h2>
+                <form onSubmit={handleSubmit}>
+                    <div>
+                        <label>
+                            Name:
+                            <input
+                                type="text"
+                                name="entry.1546317662"
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                                required
+                            />
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Email:
+                            <input
+                                type="email"
+                                name="entry.874628732"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required
+                            />
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Message:
+                            <textarea
+                                name="entry.1693678078"
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
+                                required
+                            ></textarea>
+                        </label>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
             <footer className='w-full bg-[#11050a] text-gray-400 py-6 mt-10'>
                 <div className='flex flex-col items-center'>
-                    <p className='text-center md:text-sm text-xs'>&copy; {new Date().getFullYear()} Darshan Dinesh. All rights reserved.</p>
+                    <p className='text-center md:text-sm text-xs'>&copy; {new Date().getFullYear()} Darshan Dinesh M P. All rights reserved.</p>
                     <p className='text-center md:text-sm text-xs mt-2 flex flex-col md:flex-row items-center justify-center'>
                         Contact me:
                         <a href='mailto:darshandineshmp@gmail.com' className='ml-2 hover:scale-105 transition-transform duration-300'>darshandineshmp@gmail.com</a>
                     </p>
                 </div>
             </footer>
-
-
         </div>
     );
 }
