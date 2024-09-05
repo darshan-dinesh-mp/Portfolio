@@ -171,7 +171,7 @@ function Contents() {
                     ))}
                 </div>
             </div>
-            <div ref={contactFormRef} className={`slide-in-left ${contactFormInView ? 'visible' : ''} contact-form text-gray-400 py-6 mt-10`}>
+            <div ref={contactFormRef} className={`slide-in-left ${contactFormInView ? 'visible' : ''} contact-form text-gray-400 py-6 mt-10 w-full`}>
                 <h2>Write to me</h2>
                 <form onSubmit={handleSubmit}>
                     <div>
