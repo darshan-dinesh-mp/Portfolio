@@ -7,11 +7,11 @@ import Nav from './Components/Nav/Nav'
 function App() {
 
   return (
-    <>
+    <div className='bg-black'>
       <Nav />
       <Banner />
       <Contents />
-    </>
+    </div>
   )
 }
 

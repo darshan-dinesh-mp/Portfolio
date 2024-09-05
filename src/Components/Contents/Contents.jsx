@@ -4,12 +4,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCss3, faGitAlt, faGithub, faHtml5, faJava, faLaravel, faPhp, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faC, faEnvelope, faArrowUpRightFromSquare, faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { useInView } from 'react-intersection-observer';
 
 function Contents() {
+    // Create separate refs for Projects, Skills, Contact
+    const { ref: projectsRef, inView: projectsInView } = useInView({ triggerOnce: true, threshold: 0.1 });
+    const { ref: skillsRef, inView: skillsInView } = useInView({ triggerOnce: true, threshold: 0.1 });
+    const { ref: contactRef, inView: contactInView } = useInView({ triggerOnce: true, threshold: 0.1 });
+    const { ref: contactFormRef, inView: contactFormInView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
     const skills = [
         { icon: faJava, name: 'Java' },
-        { icon: faC, name: '' },
+        { icon: faC, name: 'C' },
         { icon: faHtml5, name: 'HTML5' },
         { icon: faCss3, name: 'CSS3' },
         { icon: faReact, name: 'React' },
@@ -66,7 +72,6 @@ function Contents() {
         e.preventDefault();
 
         const newTab = window.open('', '_blank');
-
         const form = newTab.document.createElement('form');
         form.action = 'https://docs.google.com/forms/d/e/1FAIpQLSeVhNEtjlUp2-co2nCmM1_7RazxCMJNAux1YX23OVQmrekjXA/formResponse';
         form.method = 'POST';
@@ -96,76 +101,52 @@ function Contents() {
         setTimeout(() => {
             window.location.href = 'https://darshandineshmp.vercel.app';
         }, 2000);
-
     };
 
     return (
-        <div className='flex flex-col items-center justify-center gap-10 bg-black p-5 md:p-10'>
-            <div id='PROJECTS' className='w-[90vw] lg:w-[70vw] flex flex-col items-center justify-center'>
+        <div className={`flex flex-col items-center justify-center gap-10 bg-black p-5 md:p-10`}>
+            {/* Projects Section */}
+            <div ref={projectsRef} id='PROJECTS' className={`slide-in-left ${projectsInView ? 'visible' : ''} w-[90vw] lg:w-[70vw] flex flex-col items-center justify-center`}>
                 <div className='text-white mb-8 grid grid-cols-3 items-center justify-between w-full p-4'>
                     <div></div>
                     <div className='flex justify-center'>
                         <h1 className='text-4xl font-bold'>Projects</h1>
                     </div>
                     <div className='flex justify-end'>
-                        {/* Arrow icon for mobile and link for larger screens */}
-                        <a
-                            href='https://github.com/darshan-dinesh-mp?tab=repositories'
-                            className='hidden md:block text-2xl hover:translate-x-1 duration-500'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            title='See more project'>
+                        <a href='https://github.com/darshan-dinesh-mp?tab=repositories' className='hidden md:block text-2xl hover:translate-x-1 duration-500' target='_blank' rel='noopener noreferrer' title='See more project'>
                             Show more
                             <FontAwesomeIcon icon={faArrowUpRightFromSquare} title='See more project' className='ml-2 hover:rotate-12 duration-500' />
                         </a>
-                        <a
-                            href='https://github.com/darshan-dinesh-mp?tab=repositories'
-                            className='block md:hidden text-2xl'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            title='See more project'>
+                        <a href='https://github.com/darshan-dinesh-mp?tab=repositories' className='block md:hidden text-2xl' target='_blank' rel='noopener noreferrer' title='See more project'>
                             <FontAwesomeIcon icon={faArrowUpRightFromSquare} title='See more project' className='hover:rotate-12 duration-500' />
                         </a>
                     </div>
                 </div>
                 {projects.map((project, index) => (
-                    <div key={index} className='project-display'>
+                    <div key={index} className={`slide-in-left ${projectsInView ? 'visible' : ''} project-display`}>
                         <div className='project-info'>
                             <h2>{project.title}</h2>
                             <p>{project.description}</p>
-                            <a
-                                href={project.githubLink}
-                                className='text-white flex items-center justify-center gap-2 font-bold mt-5 duration-300 hover:translate-x-1'
-                                target='_blank'>
+                            <a href={project.githubLink} className='text-white flex items-center justify-center gap-2 font-bold mt-5 duration-300 hover:translate-x-1' target='_blank'>
                                 GitHub
                                 <FontAwesomeIcon icon={faArrowRightLong} />
                             </a>
                         </div>
                         <div className='project-video'>
-                            <video
-                                src={project.videoSrc}
-                                width="100%"
-                                height="100%"
-                                autoPlay
-                                loop
-                                muted
-                                playsInline>
-                            </video>
+                            <video src={project.videoSrc} width="100%" height="100%" autoPlay loop muted playsInline></video>
                         </div>
                     </div>
                 ))}
             </div>
 
-
-            <div id='SKILLS' className='w-[90vw] lg:w-[70vw] flex flex-col items-center justify-center'>
+            {/* Skills Section */}
+            <div ref={skillsRef} id='SKILLS' className={`slide-in-left ${skillsInView ? 'visible' : ''} w-[90vw] lg:w-[70vw] flex flex-col items-center justify-center`}>
                 <div className='text-white mb-8'>
                     <h1 className='text-4xl font-bold'>Skills</h1>
                 </div>
                 <div className='w-full grid grid-cols-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4'>
                     {skills.map((skill) => (
-                        <div
-                            key={skill.name}
-                            className='skill-card bg-[#2e1a24] p-6 rounded-lg shadow-lg flex flex-col items-center justify-center transition-transform transform hover:translate-y-[-5px]'>
+                        <div key={skill.name} className='skill-card bg-[#2e1a24] p-6 rounded-lg shadow-lg flex flex-col items-center justify-center transition-transform transform hover:translate-y-[-5px]'>
                             <FontAwesomeIcon icon={skill.icon} className='text-2xl md:text-3xl text-white mb-2' />
                             <span className='text-gray-300 text-sm md:text-base'>{skill.name}</span>
                         </div>
@@ -173,7 +154,8 @@ function Contents() {
                 </div>
             </div>
 
-            <div id='CONTACT' className='w-[90vw] lg:w-[70vw] flex flex-col items-center justify-center'>
+            {/* Contact Section */}
+            <div ref={contactRef} id='CONTACT' className={`slide-in-left ${contactInView ? 'visible' : ''} w-[90vw] lg:w-[70vw] flex flex-col items-center justify-center`}>
                 <div className='text-white mb-8'>
                     <h1 className='text-4xl font-bold'>Contact</h1>
                 </div>
@@ -189,8 +171,7 @@ function Contents() {
                     ))}
                 </div>
             </div>
-
-            <div className="contact-form text-gray-400 py-6 mt-10">
+            <div ref={contactFormRef} className={`slide-in-left ${contactFormInView ? 'visible' : ''} contact-form text-gray-400 py-6 mt-10`}>
                 <h2>Write to me</h2>
                 <form onSubmit={handleSubmit}>
                     <div>
