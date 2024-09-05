@@ -13,7 +13,7 @@ function Banner() {
                 <h1 className='text-white font-semibold text-3xl text-center'>Hi, I am Darshan</h1>
                 <h1 className='text-white font-semibold text-l text-center'>A passionate and dedicated programmer with a strong background in Web Development and Android Development.</h1>
             </div>
-            <div ref={ref} className={`slide-in-left ${inView ? 'visible' : ''} flex justify-center items-center md:justify-start`}>
+            <div ref={ref} className={`slide-in-left ${inView ? 'visible' : ''} border rounded-3xl flex justify-center items-center md:justify-start`}>
                 <img src="/Images/profile.png" alt="Image not available" className={b.image} />
             </div>
         </div>
