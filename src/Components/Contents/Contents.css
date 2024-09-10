@@ -184,4 +184,20 @@ footer a:hover {
         width: 100%;
         height: auto;
     }
+
+    .modal-content {
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+    .modal-content video {
+        width: 100%;
+        height: auto;
+    }
+
+    .close-button {
+        font-size: 1.2rem;
+        top: 5px;
+        right: 5px;
+    }
 }
