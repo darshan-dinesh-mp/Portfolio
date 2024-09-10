@@ -1,12 +1,34 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Contents.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCss3, faGitAlt, faGithub, faHtml5, faJava, faLaravel, faPhp, faReact } from '@fortawesome/free-brands-svg-icons';
-import { faC, faEnvelope, faArrowUpRightFromSquare, faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
+import { faC, faEnvelope, faArrowUpRightFromSquare, faArrowRightLong, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { useInView } from 'react-intersection-observer';
 
 function Contents() {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [currentVideoSrc, setCurrentVideoSrc] = useState('');
+
+    const openModal = (videoSrc) => {
+        setCurrentVideoSrc(videoSrc);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setCurrentVideoSrc('');
+    };
+
+    useEffect(() => {
+        if (isModalOpen) {
+            document.body.classList.add('modal-open');
+        } else {
+            document.body.classList.remove('modal-open');
+        }
+    }, [isModalOpen]);
+
     // Create separate refs for Projects, Skills, Contact
     const { ref: projectsRef, inView: projectsInView } = useInView({ triggerOnce: true, threshold: 0.1 });
     const { ref: skillsRef, inView: skillsInView } = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -133,11 +155,31 @@ function Contents() {
                             </a>
                         </div>
                         <div className='project-video'>
-                            <video src={project.videoSrc} width="100%" height="100%" autoPlay loop muted playsInline></video>
+                            <video
+                                src={project.videoSrc}
+                                width="100%"
+                                height="100%"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                onClick={() => openModal(project.videoSrc)}
+                            ></video>
                         </div>
                     </div>
                 ))}
+
             </div>
+            {isModalOpen && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <button className="close-button" onClick={closeModal}>
+                            <FontAwesomeIcon icon={faTimes} />
+                        </button>
+                        <video src={currentVideoSrc} controls autoPlay loop muted></video>
+                    </div>
+                </div>
+            )}
 
             {/* Skills Section */}
             <div ref={skillsRef} id='SKILLS' className={`slide-in-left ${skillsInView ? 'visible' : ''} w-[90vw] lg:w-[70vw] flex flex-col items-center justify-center`}>
