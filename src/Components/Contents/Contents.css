@@ -35,6 +35,12 @@
     height: 21rem;
     border-radius: 5px;
     overflow: hidden;
+    transition-duration: 0.3s;
+}
+
+.project-video:hover {
+    cursor: pointer;
+    transform: scale(1.03);
 }
 
 .modal {
@@ -88,7 +94,6 @@
 body.modal-open {
     overflow: hidden;
 }
-
 
 
 footer {
