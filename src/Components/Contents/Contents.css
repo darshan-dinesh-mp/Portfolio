@@ -200,4 +200,8 @@ footer a:hover {
         top: 5px;
         right: 5px;
     }
+
+    .contact-form{
+        width: 100%;
+    }
 }
