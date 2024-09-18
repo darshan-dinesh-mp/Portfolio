@@ -3,6 +3,10 @@
     filter: grayscale(20%);
 }
 
+.image:hover{
+    transform: scale(1.05);
+}
+
 @media (max-width: 768px) {
     .image {
         width: 50%;
