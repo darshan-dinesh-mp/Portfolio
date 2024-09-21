@@ -17,7 +17,7 @@ function Nav() {
 
     return (
         <>
-            <nav className='hidden md:flex fixed z-10 w-full top-0 font-semibold bg-[#11050a] text-xs text-gray-500 items-center justify-center gap-20 p-5'>
+            <nav className='hidden md:flex sticky z-10 w-full top-0 font-semibold bg-[#11050a] text-xs text-gray-500 items-center justify-center gap-20 p-5'>
                 <h1>
                     <a
                         href="#HOME"
