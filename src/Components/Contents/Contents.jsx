@@ -36,16 +36,16 @@ function Contents() {
     const { ref: contactFormRef, inView: contactFormInView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
     const skills = [
-        { icon: faC, name: 'C' },
-        { icon: faJava, name: 'Java' },
-        { icon: faPython, name: 'Python' },
-        { icon: faHtml5, name: 'HTML5' },
-        { icon: faCss3, name: 'CSS3' },
-        { icon: faReact, name: 'React' },
-        { icon: faPhp, name: 'PHP' },
-        { icon: faLaravel, name: 'Laravel' },
-        { icon: faGitAlt, name: 'Git' },
-        { icon: faGithub, name: 'GitHub' },
+        { icon: faC, name: 'C', color: '#A8B9CC' },
+        { icon: faJava, name: 'Java', color: '#007396' },
+        { icon: faPython, name: 'Python', color: '#3776AB' },
+        { icon: faHtml5, name: 'HTML5', color: '#E34F26' },
+        { icon: faCss3, name: 'CSS3', color: '#1572B6' },
+        { icon: faReact, name: 'React', color: '#61DAFB' },
+        { icon: faPhp, name: 'PHP', color: '#777BB4' },
+        { icon: faLaravel, name: 'Laravel', color: '#FF2D20' },
+        { icon: faGitAlt, name: 'Git', color: '#F05032' },
+        { icon: faGithub, name: 'GitHub', color: '#181717' },
     ];
 
     const projects = [
@@ -195,13 +195,23 @@ function Contents() {
                 </div>
                 <div className='w-full grid grid-cols-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4'>
                     {skills.map((skill) => (
-                        <div key={skill.name} className='skill-card bg-[#2e1a24] p-6 rounded-lg shadow-lg flex flex-col items-center justify-center transition-transform transform hover:translate-y-[-5px]'>
-                            <FontAwesomeIcon icon={skill.icon} className='text-2xl md:text-3xl text-white mb-2' />
+                        <div
+                            key={skill.name}
+                            className='skill-card bg-[#2e1a24] p-6 rounded-lg shadow-lg flex flex-col items-center justify-center transition-transform transform hover:translate-y-[-5px]'
+                            onMouseEnter={(e) => e.currentTarget.querySelector('svg').style.color = skill.color}
+                            onMouseLeave={(e) => e.currentTarget.querySelector('svg').style.color = 'white'}
+                        >
+                            <FontAwesomeIcon
+                                icon={skill.icon}
+                                className='text-2xl md:text-3xl text-white mb-2 transition-colors duration-300'
+                                style={{ color: 'white' }}
+                            />
                             <span className='text-gray-300 text-sm md:text-base'>{skill.name}</span>
                         </div>
                     ))}
                 </div>
             </div>
+
 
             {/* Contact Section */}
             <div ref={contactRef} id='CONTACT' className={`slide-in-left ${contactInView ? 'visible' : ''} w-[90vw] lg:w-[70vw] flex flex-col items-center justify-center`}>
