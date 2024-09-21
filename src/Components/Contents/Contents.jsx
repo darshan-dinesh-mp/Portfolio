@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Contents.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCss3, faGitAlt, faGithub, faHtml5, faJava, faLaravel, faPhp, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faCss3, faGitAlt, faGithub, faHtml5, faJava, faLaravel, faNodeJs, faPhp, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faC, faEnvelope, faArrowUpRightFromSquare, faArrowRightLong, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { useInView } from 'react-intersection-observer';
@@ -42,8 +42,8 @@ function Contents() {
         { icon: faHtml5, name: 'HTML5', color: '#E34F26' },
         { icon: faCss3, name: 'CSS3', color: '#1572B6' },
         { icon: faReact, name: 'React', color: '#61DAFB' },
-        { icon: faPhp, name: 'PHP', color: '#777BB4' },
         { icon: faLaravel, name: 'Laravel', color: '#FF2D20' },
+        { icon: faNodeJs, name: 'Node js', color: '#339933' },
         { icon: faGitAlt, name: 'Git', color: '#F05032' },
         { icon: faGithub, name: 'GitHub', color: '#181717' },
     ];
@@ -80,18 +80,22 @@ function Contents() {
             icon: faLinkedin,
             name: 'LinkedIn',
             url: 'https://www.linkedin.com/in/darshan-dinesh-mp',
+            color: '#0A66C2',
         },
         {
             icon: faGithub,
             name: 'GitHub',
             url: 'https://github.com/darshan-dinesh-mp',
+            color: '#181717',
         },
         {
             icon: faEnvelope,
             name: 'Email',
             url: 'mailto:darshandineshmp@gmail.com',
+            color: '#D44638',
         }
     ];
+
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -203,7 +207,7 @@ function Contents() {
                         >
                             <FontAwesomeIcon
                                 icon={skill.icon}
-                                className='text-2xl md:text-3xl text-white mb-2 transition-colors duration-300'
+                                className='text-2xl md:text-3xl text-white mb-2 transition-colors duration-100'
                                 style={{ color: 'white' }}
                             />
                             <span className='text-gray-300 text-sm md:text-base'>{skill.name}</span>
@@ -223,13 +227,21 @@ function Contents() {
                         <a
                             key={contact.name}
                             href={contact.url}
-                            className='contact-card bg-[#2e1a24] p-6 rounded-lg shadow-lg flex flex-col items-center justify-center transition-transform transform hover:translate-y-[-5px]'>
-                            <FontAwesomeIcon icon={contact.icon} className='text-2xl md:text-3xl text-white mb-2' />
+                            className='contact-card bg-[#2e1a24] p-6 rounded-lg shadow-lg flex flex-col items-center justify-center transition-transform transform hover:translate-y-[-5px]'
+                            onMouseEnter={(e) => e.currentTarget.querySelector('svg').style.color = contact.color}
+                            onMouseLeave={(e) => e.currentTarget.querySelector('svg').style.color = 'white'}
+                        >
+                            <FontAwesomeIcon
+                                icon={contact.icon}
+                                className='text-2xl md:text-3xl text-white mb-2 transition-colors duration-100'
+                                style={{ color: 'white' }}
+                            />
                             <span className='text-gray-300 text-sm md:text-base'>{contact.name}</span>
                         </a>
                     ))}
                 </div>
             </div>
+
             <div ref={contactFormRef} className={`slide-in-left ${contactFormInView ? 'visible' : ''} contact-form text-gray-400 py-6 mt-10`}>
                 <h2>Write to me</h2>
                 <form onSubmit={handleSubmit}>
