@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Contents.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCss3, faGitAlt, faGithub, faHtml5, faJava, faLaravel, faPhp, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faCss3, faGitAlt, faGithub, faHtml5, faJava, faLaravel, faPhp, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faC, faEnvelope, faArrowUpRightFromSquare, faArrowRightLong, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { useInView } from 'react-intersection-observer';
@@ -36,8 +36,9 @@ function Contents() {
     const { ref: contactFormRef, inView: contactFormInView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
     const skills = [
-        { icon: faJava, name: 'Java' },
         { icon: faC, name: 'C' },
+        { icon: faJava, name: 'Java' },
+        { icon: faPython, name: 'Python' },
         { icon: faHtml5, name: 'HTML5' },
         { icon: faCss3, name: 'CSS3' },
         { icon: faReact, name: 'React' },
@@ -49,16 +50,22 @@ function Contents() {
 
     const projects = [
         {
-            title: 'Eatables',
-            description: 'Food Discovery and Review Platform.',
-            videoSrc: '/projects/eatables_SR.mp4',
-            githubLink: 'https://github.com/darshan-dinesh-mp/eatables.git',
+            title: 'Money Flow',
+            description: 'Finance Tracking web app using react, node js, and firebase.',
+            videoSrc: '/projects/MoneyFlow_SR.mp4',
+            githubLink: 'https://github.com/darshan-dinesh-mp/money-flow-web-app',
         },
         {
             title: 'SMAP',
             description: 'Student Mentorship and Assessment Platform for NMAMIT, NITTE.',
             videoSrc: '/projects/smap_SR.mp4',
             githubLink: 'https://github.com/darshan-dinesh-mp/student-connect.git',
+        },
+        {
+            title: 'Eatables',
+            description: 'Food Discovery and Review Platform.',
+            videoSrc: '/projects/eatables_SR.mp4',
+            githubLink: 'https://github.com/darshan-dinesh-mp/eatables.git',
         },
         {
             title: 'ConverTo',
