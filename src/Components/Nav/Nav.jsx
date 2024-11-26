@@ -119,7 +119,7 @@ function Nav() {
                     </h1>
                     <h1>
                         <a
-                            href="https://drive.google.com/file/d/174YNl2t_h4POLdFpMkN8W0dtmq3nA2Uh/view"
+                            href="https://drive.google.com/file/d/10IvFpQlrDQJmMpo7tVzh-NjGdgBTYAlf/preview"
                             className={`block py-2 duration-200 ${option === 'Resume' ? 'text-white font-semibold' : 'text-gray-400'} font-bold`}
                             onClick={() => optionClicked('Resume')}
                         >
