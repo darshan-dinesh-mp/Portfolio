@@ -56,13 +56,16 @@ function Nav() {
                 </h1>
                 <h1>
                     <a
-                        href="https://drive.google.com/file/d/10IvFpQlrDQJmMpo7tVzh-NjGdgBTYAlf/preview"
+                        href="https://drive.google.com/uc?export=download&id=10IvFpQlrDQJmMpo7tVzh-NjGdgBTYAlf"
                         className={`duration-200 ${option === 'Resume' ? 'text-white' : 'hover:text-black'} border-2 rounded-md py-1 px-2 hover:bg-white hover:text-black`}
                         onClick={() => optionClicked('Resume')}
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
                         RESUME
                     </a>
                 </h1>
+
             </nav>
 
             <nav className='md:hidden fixed z-10 w-full top-0 font-semibold bg-black p-5 flex justify-between items-center'>
