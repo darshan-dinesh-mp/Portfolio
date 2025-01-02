@@ -14,7 +14,7 @@ function Banner() {
                 <h1 className='text-white font-semibold text-l text-center'>A passionate and dedicated programmer with a strong background in Web Development and Android Development.</h1>
             </div>
             <div ref={ref} className={`slide-in-left ${inView ? 'visible' : ''} w-[30vw] rounded-3xl flex justify-center items-center md:justify-center`}>
-                <img src="public\Images\profile.png" alt="Image not available" className={b.image} />
+                <img src="/Images/profile.png" alt="Image not available" className={b.image} />
             </div>
         </div>
     )
