@@ -3,6 +3,7 @@
     filter: grayscale(20%);
     transition-duration: 0.3s;
     border-radius: 50%;
+    background-color: #11040a;
 }
 
 .image:hover {

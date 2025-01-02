@@ -51,19 +51,19 @@ function Contents() {
     const projects = [
         {
             title: 'Money Flow',
-            description: 'Finance Tracking web app using react, node js, and firebase.',
+            description: 'Finance Tracking web app using React, Node js, Firebase, Render.',
             videoSrc: '/projects/MoneyFlow_SR.mp4',
             githubLink: 'https://github.com/darshan-dinesh-mp/money-flow-web-app',
         },
         {
-            title: 'SMAP',
-            description: 'Student Mentorship and Assessment Platform for NMAMIT, NITTE.',
+            title: 'Automated Feedback Collection and Academic Performance System',
+            description: 'HTML, CSS, JavaScript, PHP (Laravel), MySQL',
             videoSrc: '/projects/smap_SR.mp4',
             githubLink: 'https://github.com/darshan-dinesh-mp/student-connect.git',
         },
         {
             title: 'Eatables',
-            description: 'Food Discovery and Review Platform.',
+            description: 'Food Discovery and Review Platform using HTML, CSS, JavaScript, PHP, MySQL.',
             videoSrc: '/projects/eatables_SR.mp4',
             githubLink: 'https://github.com/darshan-dinesh-mp/eatables.git',
         },
