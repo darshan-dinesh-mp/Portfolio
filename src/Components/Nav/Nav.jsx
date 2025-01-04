@@ -1,6 +1,7 @@
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
+import ResumePrompt from './ResumePrompt';
 
 function Nav() {
     const [bars, setBars] = useState(false);
@@ -17,6 +18,7 @@ function Nav() {
 
     return (
         <>
+            <ResumePrompt />
             <nav className='hidden md:flex sticky z-10 w-full top-0 font-semibold bg-[#11050a] text-xs text-gray-500 items-center justify-center gap-20 p-5'>
                 <h1>
                     <a
@@ -133,3 +135,4 @@ function Nav() {
 }
 
 export default Nav;
+
