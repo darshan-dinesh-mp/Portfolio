@@ -58,7 +58,7 @@ function Nav() {
                 </h1>
                 <h1>
                     <a
-                        href="https://drive.google.com/file/d/10IvFpQlrDQJmMpo7tVzh-NjGdgBTYAlf/preview"
+                        href="https://drive.google.com/file/d/10IvFpQlrDQJmMpo7tVzh-NjGdgBTYAlf/view"
                         className={`duration-200 ${option === 'Resume' ? 'text-white' : 'hover:text-black'} border-2 rounded-md py-1 px-2 hover:bg-white hover:text-black`}
                         onClick={() => optionClicked('Resume')}
                     >
@@ -121,7 +121,7 @@ function Nav() {
                     </h1>
                     <h1>
                         <a
-                            href="https://drive.google.com/file/d/10IvFpQlrDQJmMpo7tVzh-NjGdgBTYAlf/preview"
+                            href="https://drive.google.com/file/d/10IvFpQlrDQJmMpo7tVzh-NjGdgBTYAlf/view"
                             className={`block py-2 duration-200 ${option === 'Resume' ? 'text-white font-semibold' : 'text-gray-400'} font-bold`}
                             onClick={() => optionClicked('Resume')}
                         >
